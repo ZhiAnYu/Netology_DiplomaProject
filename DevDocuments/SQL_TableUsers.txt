@@ -1,0 +1,5 @@
+Поле,Тип,Описание
+id,BIGINT (PK),Уникальный идентификатор
+login,VARCHAR(255) UNIQUE,Логин пользователя
+password,VARCHAR(255),Пароль
+auth_token,VARCHAR(255) NULLABLE,Токен авторизации
