@@ -1,0 +1,5 @@
+Поле         	 Тип	          Описание
+`id`	      BIGINT (PK)	    Уникальный идентификатор
+`filename`	VARCHAR(255)	  Имя файла
+`size`     	BIGINT	        Размер в байтах
+`user_id`	BIGINT (FK → users.id)	Владелец файла
