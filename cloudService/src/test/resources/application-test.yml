@@ -1,4 +1,3 @@
-# Настройки для тестов (переопределяют основные)
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/test_db
@@ -16,4 +15,4 @@ logging:
     ru.netology.cloudservice: INFO
 
 file-storage:
-  path: ./test-files                     
+  path: ./test-files
