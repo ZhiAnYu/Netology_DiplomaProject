@@ -1,0 +1,82 @@
+2026-07-18 21:48:13.779 [main] INFO  r.n.c.DatabaseConnectionTest - Starting DatabaseConnectionTest using Java 17.0.19 with PID 14212 (started by CheeKa in C:\Users\CheeKa\Documents\Netology_Java\MSA\Netology_DiplomaProject\cloudService)
+2026-07-18 21:48:13.785 [main] INFO  r.n.c.DatabaseConnectionTest - No active profile set, falling back to 1 default profile: "default"
+2026-07-18 21:48:15.223 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-18 21:48:15.331 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 88 ms. Found 2 JPA repository interfaces.
+2026-07-18 21:48:16.272 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-18 21:48:16.483 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-07-18 21:48:16.620 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-18 21:48:17.364 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-18 21:48:17.438 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-18 21:48:17.845 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@26ffd2c0
+2026-07-18 21:48:17.849 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-18 21:48:17.942 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-18 21:48:19.677 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-18 21:48:19.815 [main] DEBUG org.hibernate.SQL - 
+    create table files (
+        id bigserial not null,
+        deleted boolean not null,
+        filename varchar(255) not null,
+        size bigint not null,
+        user_id bigint not null,
+        primary key (id)
+    )
+2026-07-18 21:48:19.865 [main] DEBUG org.hibernate.SQL - 
+    create table users (
+        id bigserial not null,
+        auth_token varchar(255),
+        login varchar(50) not null,
+        password varchar(255) not null,
+        primary key (id)
+    )
+2026-07-18 21:48:19.878 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists users 
+       drop constraint if exists UK_ow0gan20590jrb00upg3va2fn
+2026-07-18 21:48:19.883 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-07-18 21:48:19.883 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - constraint "uk_ow0gan20590jrb00upg3va2fn" of relation "users" does not exist, skipping
+2026-07-18 21:48:19.884 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists users 
+       add constraint UK_ow0gan20590jrb00upg3va2fn unique (login)
+2026-07-18 21:48:19.900 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists files 
+       add constraint FKdgr5hx49828s5vhjo1s8q3wdp 
+       foreign key (user_id) 
+       references users
+2026-07-18 21:48:19.918 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-18 21:48:20.285 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-18 21:48:21.497 [main] INFO  r.n.c.DatabaseConnectionTest - Started DatabaseConnectionTest in 8.477 seconds (process running for 10.295)
+2026-07-18 21:48:22.575 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        users
+        (auth_token, login, password) 
+    values
+        (?, ?, ?)
+2026-07-18 21:48:22.918 [main] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.login=?
+2026-07-18 21:48:22.952 [main] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2026-07-18 21:48:22.982 [main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        users 
+    where
+        id=?
+2026-07-18 21:48:23.018 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-18 21:48:23.024 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-18 21:48:23.046 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
