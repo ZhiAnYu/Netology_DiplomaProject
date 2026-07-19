@@ -38,5 +38,12 @@ public class User {
     public int hashCode() {
         return Objects.hash(login);
     }
+
+    //для тестов
+    public User(Long id, String login, String password) {
+        this.id = id;
+        this.login = login;
+        this.password = password;
+    }
 }
 

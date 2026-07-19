@@ -1,4 +1,4 @@
 package ru.netology.cloudService.dto;
 
-public record ErrorResponse(String message, long timestamp) {
+public record ErrorResponse(String message, Integer id) {
 }
