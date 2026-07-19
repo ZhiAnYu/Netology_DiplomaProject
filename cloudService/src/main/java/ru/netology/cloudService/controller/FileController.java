@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import ru.netology.cloudService.dto.FileInfoDto;
 import ru.netology.cloudService.entity.User;
 import ru.netology.cloudService.service.FileService;
@@ -35,5 +36,21 @@ public class FileController {
         List<FileInfoDto> files = fileService.getUserFiles(currentUser, limit);
 
         return ResponseEntity.ok(files);
+    }
+
+    @PostMapping("/file")
+    public ResponseEntity<Void> uploadFile(
+            @RequestHeader("auth-token") String token,
+            @RequestParam("filename") String filename,
+            @RequestParam("file") MultipartFile file,
+            HttpServletRequest request) {
+
+        log.debug("Запрос на загрузку файла: {}", filename);
+
+        User currentUser = (User) request.getAttribute("currentUser");
+
+        fileService.uploadFile(currentUser, filename, file);
+
+        return ResponseEntity.ok().build();
     }
 }

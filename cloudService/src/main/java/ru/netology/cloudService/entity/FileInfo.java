@@ -36,7 +36,6 @@ public class FileInfo {
     @Column(nullable = false)
     private boolean deleted = false;
 
-    // === Ручная реализация equals/hashCode/toString ===
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
