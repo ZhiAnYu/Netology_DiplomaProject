@@ -27,6 +27,17 @@ public class GlobalExceptionHandler {
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(error);
     }
 
+    @ExceptionHandler(ru.netology.cloudService.exception.FileNotFoundException.class)
+    public ResponseEntity<ErrorResponse> handleFileNotFoundException(ru.netology.cloudService.exception.FileNotFoundException ex) {
+        log.warn("Ошибка при работе с файлами: {}", ex.getMessage());
+
+        ErrorResponse error = new ErrorResponse(ex.getMessage(), 0);
+
+        return ResponseEntity
+                .status(HttpStatus.BAD_REQUEST)
+                .body(error);
+    }
+
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ErrorResponse> handleException(Exception ex) {
         log.error("Непредвиденная ошибка", ex);

@@ -10,6 +10,7 @@ import org.springframework.web.multipart.MultipartFile;
 import ru.netology.cloudService.dto.FileInfoDto;
 import ru.netology.cloudService.entity.FileInfo;
 import ru.netology.cloudService.entity.User;
+import ru.netology.cloudService.exception.FileNotFoundException;
 import ru.netology.cloudService.repository.FileRepository;
 
 import java.io.IOException;
@@ -79,6 +80,42 @@ public class FileService {
     }
 
     @Transactional(readOnly = true)
+    public org.springframework.core.io.Resource downloadFile(User user, String filename) {
+        log.info("Попытка скачивания файла: {} для пользователя: {}", filename, user.getLogin());
+
+        // 1. Ищем файл в БД (автоматически фильтрует deleted = false благодаря @Where)
+        FileInfo fileInfo = fileRepository.findByUserAndFilename(user, filename)
+                .orElseThrow(() -> {
+                    log.warn("Файл не найден: {}", filename);
+                    return new FileNotFoundException("Файл не найден");
+                });
+
+        // 2. Проверяем, что файл существует на диске
+        Path filePath = this.fileStoragePath.resolve(fileInfo.getFilename()).normalize();
+
+        if (!Files.exists(filePath)) {
+            log.error("Файл есть в БД, но отсутствует на диске: {}", filePath);
+            throw new FileNotFoundException("Файл повреждён или отсутствует на диске");
+        }
+
+        // 3. Возвращаем ресурс для скачивания
+        try {
+            org.springframework.core.io.Resource resource =
+                    new org.springframework.core.io.UrlResource(filePath.toUri());
+
+            if (resource.isReadable()) {
+                log.info("Файл готов к скачиванию: {}", filename);
+                return resource;
+            } else {
+                throw new RuntimeException("Файл недоступен для чтения");
+            }
+        } catch (Exception e) {
+            log.error("Ошибка при подготовке файла к скачиванию", e);
+            throw new RuntimeException("Ошибка при скачивании файла", e);
+        }
+    }
+
+    @Transactional(readOnly = true)
     public List<FileInfoDto> getUserFiles(User user, int limit) {
         log.debug("Получение файлов для пользователя: {}, limit: {}", user.getLogin(), limit);
 
@@ -89,4 +126,6 @@ public class FileService {
                 .map(file -> new FileInfoDto(file.getFilename(), file.getSize()))
                 .collect(Collectors.toList());
     }
+
+
 }

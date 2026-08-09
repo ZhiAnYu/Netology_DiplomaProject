@@ -53,4 +53,23 @@ public class FileController {
 
         return ResponseEntity.ok().build();
     }
+
+    @GetMapping("/file")
+    public ResponseEntity<org.springframework.core.io.Resource> downloadFile(
+            @RequestHeader("auth-token") String token,
+            @RequestParam("filename") String filename,
+            HttpServletRequest request) {
+
+        log.debug("Запрос на скачивание файла: {}", filename);
+
+        User currentUser = (User) request.getAttribute("currentUser");
+
+        org.springframework.core.io.Resource resource = fileService.downloadFile(currentUser, filename);
+
+        return ResponseEntity.ok()
+                .header(org.springframework.http.HttpHeaders.CONTENT_DISPOSITION,
+                        "attachment; filename=\"" + resource.getFilename() + "\"")
+                .contentType(org.springframework.http.MediaType.APPLICATION_OCTET_STREAM)
+                .body(resource);
+    }
 }
