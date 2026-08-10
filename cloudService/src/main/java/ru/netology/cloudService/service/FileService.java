@@ -115,6 +115,51 @@ public class FileService {
         }
     }
 
+    @Transactional
+    public void renameFile(User user, String oldFilename, String newFilename) {
+        log.info("Попытка переименования файла: {} -> {} для пользователя: {}", oldFilename, newFilename, user.getLogin());
+
+        FileInfo fileInfo = fileRepository.findByUserAndFilename(user, oldFilename)
+                .orElseThrow(() -> {
+                    log.warn("Файл для переименования не найден: {}", oldFilename);
+                    return new FileNotFoundException("Файл не найден");
+                });
+
+        if (fileRepository.existsByUserAndFilename(user, newFilename)) {
+            throw new IllegalArgumentException("Файл с таким новым именем уже существует");
+        }
+
+        Path oldPath = this.fileStoragePath.resolve(oldFilename).normalize();
+        Path newPath = this.fileStoragePath.resolve(newFilename).normalize();
+
+        if (!oldPath.startsWith(this.fileStoragePath) || !newPath.startsWith(this.fileStoragePath)) {
+            throw new IllegalArgumentException("Небезопасный путь к файлу");
+        }
+        try {
+            Files.move(oldPath, newPath, java.nio.file.StandardCopyOption.REPLACE_EXISTING);
+            log.info("Файл успешно переименован на диске");
+        } catch (java.io.IOException e) {
+            log.error("Ошибка при переименовании файла на диске", e);
+            throw new RuntimeException("Ошибка файловой системы при переименовании");
+        }
+
+        fileInfo.setFilename(newFilename);
+        fileRepository.save(fileInfo);
+        log.info("Имя файла обновлено в БД");
+    }
+
+    @Transactional
+    public void deleteFile(User user, String filename) {
+        log.info("Попытка удаления файла: {} для пользователя: {}", filename, user.getLogin());
+        FileInfo fileInfo = fileRepository.findByUserAndFilename(user, filename)
+                .orElseThrow(() -> {
+                    log.warn("Файл для удаления не найден: {}", filename);
+                    return new FileNotFoundException("Файл не найден");
+                });
+        fileRepository.delete(fileInfo);
+        log.info("Файл {} помечен как удаленный (soft delete)", filename);
+    }
+
     @Transactional(readOnly = true)
     public List<FileInfoDto> getUserFiles(User user, int limit) {
         log.debug("Получение файлов для пользователя: {}, limit: {}", user.getLogin(), limit);

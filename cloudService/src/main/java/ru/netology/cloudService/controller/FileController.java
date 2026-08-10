@@ -1,12 +1,14 @@
 package ru.netology.cloudService.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
+import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import ru.netology.cloudService.dto.FileInfoDto;
+import ru.netology.cloudService.dto.RenameFileRequest;
 import ru.netology.cloudService.entity.User;
 import ru.netology.cloudService.service.FileService;
 
@@ -71,5 +73,32 @@ public class FileController {
                         "attachment; filename=\"" + resource.getFilename() + "\"")
                 .contentType(org.springframework.http.MediaType.APPLICATION_OCTET_STREAM)
                 .body(resource);
+    }
+
+    @PutMapping("/file")
+    public ResponseEntity<Void> renameFile(
+            @RequestHeader("auth-token") String token,
+            @RequestParam("filename") String oldFilename,
+            @RequestBody @Valid RenameFileRequest request,
+            HttpServletRequest httpRequest) {
+
+        log.debug("Запрос на переименование файла: {} -> {}", oldFilename, request.name());
+
+        User currentUser = (User) httpRequest.getAttribute("currentUser");
+
+        fileService.renameFile(currentUser, oldFilename, request.name());
+
+        return ResponseEntity.ok().build();
+    }
+
+    @DeleteMapping("/file")
+    public ResponseEntity<Void> deleteFile (
+            @RequestHeader ("auth-token") String token,
+            @RequestParam ("filename") String filename,
+            HttpServletRequest request) {
+        log.debug("Запрос на удаление файла: {}", filename);
+        User currentUser = (User) request.getAttribute("currentUser");
+        fileService.deleteFile(currentUser, filename);
+        return ResponseEntity.ok().build();
     }
 }
