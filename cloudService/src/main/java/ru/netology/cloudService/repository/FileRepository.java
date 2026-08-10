@@ -2,6 +2,8 @@ package ru.netology.cloudService.repository;
 
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import ru.netology.cloudService.entity.FileInfo;
 import ru.netology.cloudService.entity.User;
 
@@ -14,4 +16,8 @@ public interface FileRepository extends JpaRepository<FileInfo, Long> {
     Optional<FileInfo> findByUserAndFilename(User user, String filename);
 
     boolean existsByUserAndFilename(User user, String filename);
+
+    // для интеграционных тестов
+    @Query(value = "SELECT * FROM files WHERE user_id = :userId", nativeQuery = true)
+    List<FileInfo> findAllByUserIdIncludingDeleted(@Param("userId") Long userId);
 }

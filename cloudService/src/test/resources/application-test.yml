@@ -9,10 +9,14 @@ spring:
       ddl-auto: create-drop
     show-sql: true
 
+  jackson:
+    parameter-names:
+      mode: all
+
 logging:
   level:
     root: WARN
-    ru.netology.cloudservice: INFO
+    ru.netology.cloudService: INFO
 
 file-storage:
   path: ./test-files
