@@ -73,7 +73,7 @@ RESTful API для облачного хранения файлов с подд�
 
 4. API будет доступно по адресу: `http://localhost:80` (через Nginx) или `http://localhost:8080` (напрямую к Backend).
 
-## 📡 API Endpoints
+## API Endpoints
 
 Базовый путь: `/cloud`
 
@@ -117,7 +117,7 @@ RESTful API для облачного хранения файлов с подд�
 ./mvnw clean test
 ```
 
-## 📂 Структура проекта
+## Структура проекта
 
 ```text
 ├── src/
