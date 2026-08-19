@@ -17,6 +17,45 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    networks:
+     - cloud-network
+
+  backend:
+    build: .
+    container_name: cloud-backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: cloud_db
+      DB_USER: user
+      DB_PASSWORD: password
+      FILE_STORAGE_PATH: /app/files
+    volumes:
+      - ./app-files:/app/files
+      - ./app-logs:/app/logs
+    networks:
+      - cloud-network
+
+  nginx:
+    image: nginx:alpine
+    container_name: cloud-nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    networks:
+      - cloud-network
 
 volumes:
   postgres-data:
+
+networks:
+  cloud-network:
+    driver: bridge
