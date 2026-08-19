@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
 import ru.netology.cloudService.entity.User;
 import ru.netology.cloudService.exception.AuthException;
 import ru.netology.cloudService.repository.UserRepository;
@@ -20,9 +21,14 @@ class AuthServiceIntegrationTest extends BaseIntegrationTest {
     @Autowired
     private UserRepository userRepository;
 
+    @Autowired
+    private JdbcTemplate jdbcTemplate;
+
     @BeforeEach
     void setUp() {
-        userRepository.deleteAll();
+        jdbcTemplate.execute("DELETE FROM files");
+        jdbcTemplate.execute("DELETE FROM users");
+        userRepository.save(new User("testUser", "testPassword"));
     }
 
     @Test

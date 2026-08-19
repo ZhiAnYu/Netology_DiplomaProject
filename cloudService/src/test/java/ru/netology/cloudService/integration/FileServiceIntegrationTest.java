@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.test.util.ReflectionTestUtils;
 import ru.netology.cloudService.dto.FileInfoDto;
@@ -32,12 +33,16 @@ class FileServiceIntegrationTest extends BaseIntegrationTest {
 
     @Autowired
     private UserRepository userRepository;
+
+    @Autowired
+    private JdbcTemplate jdbcTemplate;
+
     private User testUser;
 
     @BeforeEach
     void setUp() throws IOException {
-        fileRepository.deleteAll();
-        userRepository.deleteAll();
+        jdbcTemplate.execute("DELETE FROM files");
+        jdbcTemplate.execute("DELETE FROM users");
 
         testUser = userRepository.save(new User("user1", "pass123"));
 

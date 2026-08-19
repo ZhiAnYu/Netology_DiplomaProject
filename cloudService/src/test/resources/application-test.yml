@@ -1,13 +1,13 @@
 spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5432/test_db
-    username: test
-    password: test
 
   jpa:
     hibernate:
       ddl-auto: create-drop
     show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: false
 
   jackson:
     parameter-names:
@@ -16,7 +16,7 @@ spring:
 logging:
   level:
     root: WARN
-    ru.netology.cloudService: INFO
+    ru.netology.cloudService: DEBUG
 
 file-storage:
   path: ./test-files
