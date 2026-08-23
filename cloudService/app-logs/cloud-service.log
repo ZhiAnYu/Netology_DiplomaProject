@@ -500,3 +500,223 @@ org.springframework.web.servlet.resource.NoResourceFoundException: No static res
         deleted = true 
     WHERE
         id = ?
+2026-08-23 18:49:52.177 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-08-23 18:49:52.256 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-08-23 18:49:52.363 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-23 18:49:52.515 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-08-23 18:49:52.556 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-08-23 18:49:58.048 [main] INFO  r.n.c.CloudServiceApplication - Starting CloudServiceApplication v0.0.1-SNAPSHOT using Java 17.0.20 with PID 1 (/app/app.jar started by appuser in /app)
+2026-08-23 18:49:58.058 [main] INFO  r.n.c.CloudServiceApplication - The following 1 profile is active: "prod"
+2026-08-23 18:49:58.477 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-23 18:49:58.614 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 106 ms. Found 2 JPA repository interfaces.
+2026-08-23 18:50:00.108 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-08-23 18:50:00.164 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-23 18:50:00.167 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-08-23 18:50:00.303 [main] INFO  o.a.c.c.C.[.[localhost].[/cloud] - Initializing Spring embedded WebApplicationContext
+2026-08-23 18:50:00.306 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2101 ms
+2026-08-23 18:50:00.803 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-08-23 18:50:00.957 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+2026-08-23 18:50:01.068 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-08-23 18:50:02.039 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-23 18:50:02.118 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-23 18:50:02.674 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7d1f3fe9
+2026-08-23 18:50:02.681 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-23 18:50:02.830 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-08-23 18:50:02.943 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.24
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-23 18:50:05.984 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-23 18:50:06.136 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-23 18:50:06.857 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-23 18:50:06.870 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: /app/files
+2026-08-23 18:50:06.964 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-23 18:50:07.721 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/cloud'
+2026-08-23 18:50:07.743 [main] INFO  r.n.c.CloudServiceApplication - Started CloudServiceApplication in 11.463 seconds (process running for 14.785)
+2026-08-23 18:50:55.932 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/cloud] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-23 18:50:55.934 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-08-23 18:50:55.939 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-08-23 18:50:56.173 [http-nio-8080-exec-2] INFO  r.n.cloudService.service.AuthService - Попытка входа пользователя: user1
+2026-08-23 18:50:56.339 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.login=?
+2026-08-23 18:50:56.394 [http-nio-8080-exec-2] INFO  r.n.cloudService.service.AuthService - Успешный вход пользователя: user1
+2026-08-23 18:50:56.423 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    update
+        users 
+    set
+        auth_token=?,
+        login=?,
+        password=? 
+    where
+        id=?
+2026-08-23 18:50:56.528 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-08-23 18:50:56.541 [http-nio-8080-exec-4] WARN  r.n.c.interceptor.AuthInterceptor - Невалидный токен: Bearer 4163771c-5800-45d3-b29a-090e60c2dced
+2026-08-23 18:50:56.555 [http-nio-8080-exec-4] WARN  r.n.c.e.GlobalExceptionHandler - Неавторизованный доступ: Invalid auth token
+2026-08-23 18:50:56.598 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-08-23 18:50:56.603 [http-nio-8080-exec-6] WARN  r.n.c.interceptor.AuthInterceptor - Невалидный токен: Bearer 4163771c-5800-45d3-b29a-090e60c2dced
+2026-08-23 18:50:56.607 [http-nio-8080-exec-6] WARN  r.n.c.e.GlobalExceptionHandler - Неавторизованный доступ: Invalid auth token
+2026-08-23 18:53:26.084 [http-nio-8080-exec-9] INFO  r.n.cloudService.service.AuthService - Попытка входа пользователя: user1
+2026-08-23 18:53:26.096 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.login=?
+2026-08-23 18:53:26.101 [http-nio-8080-exec-9] INFO  r.n.cloudService.service.AuthService - Успешный вход пользователя: user1
+2026-08-23 18:53:26.104 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    update
+        users 
+    set
+        auth_token=?,
+        login=?,
+        password=? 
+    where
+        id=?
+2026-08-23 18:53:26.172 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-08-23 18:53:26.194 [http-nio-8080-exec-10] WARN  r.n.c.interceptor.AuthInterceptor - Невалидный токен: Bearer 7342b9b1-623b-4932-a2f6-cee97d1d7d80
+2026-08-23 18:53:26.198 [http-nio-8080-exec-10] WARN  r.n.c.e.GlobalExceptionHandler - Неавторизованный доступ: Invalid auth token
+2026-08-23 18:53:26.224 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-08-23 18:53:26.230 [http-nio-8080-exec-1] WARN  r.n.c.interceptor.AuthInterceptor - Невалидный токен: Bearer 7342b9b1-623b-4932-a2f6-cee97d1d7d80
+2026-08-23 18:53:26.233 [http-nio-8080-exec-1] WARN  r.n.c.e.GlobalExceptionHandler - Неавторизованный доступ: Invalid auth token
+2026-08-23 18:56:49.307 [http-nio-8080-exec-3] INFO  r.n.cloudService.service.AuthService - Попытка входа пользователя: user1
+2026-08-23 18:56:49.317 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.login=?
+2026-08-23 18:56:49.324 [http-nio-8080-exec-3] INFO  r.n.cloudService.service.AuthService - Успешный вход пользователя: user1
+2026-08-23 18:56:49.332 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    update
+        users 
+    set
+        auth_token=?,
+        login=?,
+        password=? 
+    where
+        id=?
+2026-08-23 18:56:49.395 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-08-23 18:56:49.407 [http-nio-8080-exec-4] WARN  r.n.c.interceptor.AuthInterceptor - Невалидный токен: Bearer 215f2c8a-0bed-4d4d-ab39-59d7b1676b17
+2026-08-23 18:56:49.413 [http-nio-8080-exec-4] WARN  r.n.c.e.GlobalExceptionHandler - Неавторизованный доступ: Invalid auth token
+2026-08-23 18:56:49.439 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-08-23 18:56:49.449 [http-nio-8080-exec-5] WARN  r.n.c.interceptor.AuthInterceptor - Невалидный токен: Bearer 215f2c8a-0bed-4d4d-ab39-59d7b1676b17
+2026-08-23 18:56:49.453 [http-nio-8080-exec-5] WARN  r.n.c.e.GlobalExceptionHandler - Неавторизованный доступ: Invalid auth token
+2026-08-23 18:59:43.463 [http-nio-8080-exec-7] INFO  r.n.cloudService.service.AuthService - Попытка входа пользователя: user1
+2026-08-23 18:59:43.475 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.login=?
+2026-08-23 18:59:43.482 [http-nio-8080-exec-7] INFO  r.n.cloudService.service.AuthService - Успешный вход пользователя: user1
+2026-08-23 18:59:43.488 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    update
+        users 
+    set
+        auth_token=?,
+        login=?,
+        password=? 
+    where
+        id=?
+2026-08-23 18:59:43.527 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-08-23 18:59:43.532 [http-nio-8080-exec-8] WARN  r.n.c.interceptor.AuthInterceptor - Невалидный токен: Bearer 50e5bd03-d1ac-4818-8755-92be36f39807
+2026-08-23 18:59:43.537 [http-nio-8080-exec-8] WARN  r.n.c.e.GlobalExceptionHandler - Неавторизованный доступ: Invalid auth token
+2026-08-23 18:59:43.573 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-08-23 18:59:43.581 [http-nio-8080-exec-9] WARN  r.n.c.interceptor.AuthInterceptor - Невалидный токен: Bearer 50e5bd03-d1ac-4818-8755-92be36f39807
+2026-08-23 18:59:43.585 [http-nio-8080-exec-9] WARN  r.n.c.e.GlobalExceptionHandler - Неавторизованный доступ: Invalid auth token
