@@ -27,7 +27,7 @@ public class AuthInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request,
                              HttpServletResponse response,
                              Object handler) {
-        System.out.println(">>> INTERCEPTOR ВЫЗВАН: " + request.getRequestURI());
+//   System.out.println(">>> INTERCEPTOR ВЫЗВАН: " + request.getRequestURI());
 
         if (!(handler instanceof HandlerMethod)) {
             return true;

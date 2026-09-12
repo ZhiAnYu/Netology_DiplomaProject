@@ -61,7 +61,7 @@ class FileServiceIntegrationTest extends BaseIntegrationTest {
 
         List<FileInfoDto> files = fileService.getUserFiles(testUser, 10);
         assertEquals(1, files.size());
-        assertEquals("test.txt", files.get(0).name());
+        assertEquals("test.txt", files.get(0).filename());
 
         var resource = fileService.downloadFile(testUser, "test.txt");
         assertNotNull(resource);

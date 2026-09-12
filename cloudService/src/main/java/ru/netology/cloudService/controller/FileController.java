@@ -82,11 +82,11 @@ public class FileController {
             @RequestBody @Valid RenameFileRequest request,
             HttpServletRequest httpRequest) {
 
-        log.debug("Запрос на переименование файла: {} -> {}", oldFilename, request.name());
+        log.debug("Запрос на переименование файла: {} -> {}", oldFilename, request.filename());
 
         User currentUser = (User) httpRequest.getAttribute("currentUser");
 
-        fileService.renameFile(currentUser, oldFilename, request.name());
+        fileService.renameFile(currentUser, oldFilename, request.filename());
 
         return ResponseEntity.ok().build();
     }
