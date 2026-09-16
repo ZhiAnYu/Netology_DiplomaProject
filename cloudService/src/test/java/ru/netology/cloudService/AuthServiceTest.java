@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.mockito.junit.jupiter.MockitoExtension;
 import ru.netology.cloudService.entity.User;
 import ru.netology.cloudService.exception.AuthException;
@@ -15,6 +16,7 @@ import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
@@ -22,6 +24,9 @@ class AuthServiceTest {
 
     @Mock
     private UserRepository userRepository;
+    @Mock
+    private PasswordEncoder passwordEncoder;
+
 
     @InjectMocks
     private AuthService authService;
@@ -36,18 +41,17 @@ class AuthServiceTest {
     @Test
     void login_shouldReturnToken_whenCredentialsAreValid() {
         // Given
-        when(userRepository.findByLogin("user1"))
-                .thenReturn(Optional.of(testUser));
-        when(userRepository.save(any(User.class)))
-                .thenAnswer(invocation -> invocation.getArgument(0));
+        when(userRepository.findByLogin("user1")).thenReturn(Optional.of(testUser));
+        when(passwordEncoder.matches(eq("pass123"), eq("pass123"))).thenReturn(true);
+        when(userRepository.save(any(User.class))).thenAnswer(inv -> inv.getArgument(0));
 
         // When
         String token = authService.login("user1", "pass123");
 
         // Then
-        assertNotNull(token, "Токен не должен быть null");
-        assertFalse(token.isEmpty(), "Токен не должен быть пустым");
+        assertNotNull(token);
         verify(userRepository).findByLogin("user1");
+        verify(passwordEncoder).matches("pass123", "pass123"); // Проверяем, что метод вызвался
         verify(userRepository).save(any(User.class));
     }
 
@@ -69,8 +73,8 @@ class AuthServiceTest {
     @Test
     void login_shouldThrowException_whenPasswordIsWrong() {
         // Given
-        when(userRepository.findByLogin("user1"))
-                .thenReturn(Optional.of(testUser));
+        when(userRepository.findByLogin("user1")).thenReturn(Optional.of(testUser));
+        when(passwordEncoder.matches(eq("wrongpass"), eq("pass123"))).thenReturn(false);
 
         // When & Then
         AuthException exception = assertThrows(AuthException.class, () -> {

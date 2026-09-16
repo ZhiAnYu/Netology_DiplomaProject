@@ -27,7 +27,6 @@ public class AuthInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request,
                              HttpServletResponse response,
                              Object handler) {
-//   System.out.println(">>> INTERCEPTOR ВЫЗВАН: " + request.getRequestURI());
 
         if (!(handler instanceof HandlerMethod)) {
             return true;
@@ -44,16 +43,19 @@ public class AuthInterceptor implements HandlerInterceptor {
             log.warn("Отсутствует заголовок {}", AUTH_TOKEN_HEADER);
             throw new UnauthorizedException("Missing auth token");
         }
+        if (token.contains(" ")) {
+            String[] parts = token.split("\\s+");
+            token = parts[parts.length - 1];
+        }
 
         try {
             User user = authService.getUserByToken(token);
             log.debug("Пользователь {} авторизован", user.getLogin());
 
             request.setAttribute("currentUser", user);
-
             return true;
         } catch (Exception e) {
-            log.warn("Невалидный токен: {}", token);
+            log.warn("Невалидный токен");
             throw new UnauthorizedException("Invalid auth token");
         }
     }

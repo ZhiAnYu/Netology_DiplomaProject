@@ -53,11 +53,11 @@ public class FileService {
         if (fileRepository.existsByUserAndFilename(user, filename)) {
             throw new IllegalArgumentException("Файл с таким именем уже существует");
         }
-
         try {
-            Path targetLocation = this.fileStoragePath.resolve(filename).normalize();
+            Path userPath = getUserStoragePath(user);
+            Path targetLocation = userPath.resolve(filename).normalize();
 
-            if (!targetLocation.startsWith(this.fileStoragePath)) {
+            if (!targetLocation.startsWith(userPath)) {
                 throw new IllegalArgumentException("Небезопасный путь к файлу");
             }
 
@@ -89,17 +89,15 @@ public class FileService {
                     log.warn("Файл не найден: {}", filename);
                     return new FileNotFoundException("Файл не найден");
                 });
-
-        // 2. Проверяем, что файл существует на диске
-        Path filePath = this.fileStoragePath.resolve(fileInfo.getFilename()).normalize();
-
-        if (!Files.exists(filePath)) {
-            log.error("Файл есть в БД, но отсутствует на диске: {}", filePath);
-            throw new FileNotFoundException("Файл повреждён или отсутствует на диске");
-        }
-
-        // 3. Возвращаем ресурс для скачивания
         try {
+            Path userPath = getUserStoragePath(user);
+            Path filePath = userPath.resolve(fileInfo.getFilename()).normalize();
+
+            if (!Files.exists(filePath)) {
+                log.error("Файл есть в БД, но отсутствует на диске: {}", filePath);
+                throw new FileNotFoundException("Файл повреждён или отсутствует на диске");
+            }
+
             org.springframework.core.io.Resource resource =
                     new org.springframework.core.io.UrlResource(filePath.toUri());
 
@@ -107,9 +105,9 @@ public class FileService {
                 log.info("Файл готов к скачиванию: {}", filename);
                 return resource;
             } else {
-                throw new RuntimeException("Файл недоступен для чтения");
+                throw new FileNotFoundException("Файл недоступен для чтения");
             }
-        } catch (Exception e) {
+        } catch (IOException e) {
             log.error("Ошибка при подготовке файла к скачиванию", e);
             throw new RuntimeException("Ошибка при скачивании файла", e);
         }
@@ -129,16 +127,19 @@ public class FileService {
             throw new IllegalArgumentException("Файл с таким новым именем уже существует");
         }
 
-        Path oldPath = this.fileStoragePath.resolve(oldFilename).normalize();
-        Path newPath = this.fileStoragePath.resolve(newFilename).normalize();
-
-        if (!oldPath.startsWith(this.fileStoragePath) || !newPath.startsWith(this.fileStoragePath)) {
-            throw new IllegalArgumentException("Небезопасный путь к файлу");
-        }
         try {
-            Files.move(oldPath, newPath, java.nio.file.StandardCopyOption.REPLACE_EXISTING);
+            // ⭐️ ИЗМЕНЕНИЕ: переименовываем в папке пользователя
+            Path userPath = getUserStoragePath(user);
+            Path oldPath = userPath.resolve(oldFilename).normalize();
+            Path newPath = userPath.resolve(newFilename).normalize();
+
+            if (!oldPath.startsWith(userPath) || !newPath.startsWith(userPath)) {
+                throw new IllegalArgumentException("Небезопасный путь к файлу");
+            }
+
+            Files.move(oldPath, newPath, StandardCopyOption.REPLACE_EXISTING);
             log.info("Файл успешно переименован на диске");
-        } catch (java.io.IOException e) {
+        } catch (IOException e) {
             log.error("Ошибка при переименовании файла на диске", e);
             throw new RuntimeException("Ошибка файловой системы при переименовании");
         }
@@ -172,5 +173,12 @@ public class FileService {
                 .collect(Collectors.toList());
     }
 
+    private Path getUserStoragePath(User user) throws IOException {
+        Path userPath = this.fileStoragePath.resolve(String.valueOf(user.getId()));
+        if (!Files.exists(userPath)) {
+            Files.createDirectories(userPath);
+        }
+        return userPath;
+    }
 
 }

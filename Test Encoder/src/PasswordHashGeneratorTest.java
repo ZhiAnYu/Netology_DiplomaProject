@@ -1,12 +1,8 @@
-package ru.netology.cloudService;
-
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 public class PasswordHashGeneratorTest {
     @Test
-    @Disabled("Использовать только для генерации хешей вручную")
     void generateHashes() {
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 

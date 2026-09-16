@@ -131,10 +131,10 @@ class FileServiceTest {
             List<FileInfoDto> result = fileService.getUserFiles(testUser, 10);
 
             // Then
-            assertEquals("file1.txt", result.get(0).name());
+            assertEquals("file1.txt", result.get(0).filename());
             assertEquals(100L, result.get(0).size());
 
-            assertEquals("file2.txt", result.get(1).name());
+            assertEquals("file2.txt", result.get(1).filename());
             assertEquals(200L, result.get(1).size());
         }
 
