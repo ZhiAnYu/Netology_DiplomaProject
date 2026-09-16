@@ -1,63 +1,62 @@
-cloud-service/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/example/cloud/
-│   │   │       ├── CloudServiceApplication.java      ← Главный класс
-│   │   │       │
-│   │   │       ├── controller/                        ← REST-контроллеры
-│   │   │       │   ├── AuthController.java
-│   │   │       │   └── FileController.java
-│   │   │       │
-│   │   │       ├── service/                           ← Бизнес-логика
-│   │   │       │   ├── AuthService.java
-│   │   │       │   └── FileService.java
-│   │   │       │
-│   │   │       ├── repository/                        ← Работа с БД
-│   │   │       │   ├── UserRepository.java
-│   │   │       │   └── FileRepository.java
-│   │   │       │
-│   │   │       ├── entity/                            ← JPA-сущности
-│   │   │       │   ├── User.java
-│   │   │       │   └── FileInfo.java
-│   │   │       │
-│   │   │       ├── dto/                               ← DTO для API
-│   │   │       │   ├── LoginRequest.java
-│   │   │       │   ├── LoginResponse.java
-│   │   │       │   ├── ErrorResponse.java
-│   │   │       │   └── FileInfoDto.java
-│   │   │       │
-│   │   │       ├── config/                            ← Конфигурация
-│   │   │       │   └── WebConfig.java                 ← CORS
-│   │   │       │
-│   │   │       ├── exception/                         ← Обработка ошибок
-│   │   │       │   ├── AuthException.java
-│   │   │       │   └── GlobalExceptionHandler.java
-│   │   │       │
-│   │   │       └── filter/                            ← Фильтры
-│   │   │           └── AuthFilter.java                ← Проверка токена
-│   │   │
-│   │   └── resources/
-│   │       ├── application.yml                        ← Настройки
-│   │       └── logback-spring.xml                     ← Настройки логирования
-│   │
-│   └── test/
-│       └── java/
-│           └── com/example/cloud/
-│               ├── service/
-│               │   ├── AuthServiceTest.java           ← Unit (Mockito)
-│               │   └── FileServiceTest.java
-│               ├── controller/
-│               │   └── AuthControllerTest.java        ← Unit (MockMvc)
-│               └── integration/
-│                   └── FullFlowIntegrationTest.java   ← Integration (Testcontainers)
-│
-├── files/                                             ← Папка с файлами (создастся автоматически)
-├── logs/                                              ← Папка с логами
-│
-├── docker-compose.yml                                 ← Docker Compose
-├── nginx.conf                                         ← Конфиг Nginx
-├── Dockerfile                                         ← Dockerfile для Backend
-├── pom.xml (или build.gradle)                         ← Сборщик
-├── README.md                                          ← Документация
-└── .gitignore
+
+## Структура проекта
+
+```
+Netology_DiplomaProject/          
+├── .git/
+├── .gitignore                    
+├── cloudService/
+│   ├── pom.xml
+│   ├── Dockerfile
+│   ├── docker-compose.yml
+│   ├── nginx.conf
+│   ├── README.md                 Основной README
+│   ├── README_debug.md           отладочная информация
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/ru/netology/cloudService/
+│   │   │   │   ├── config/
+│   │   │   │   │   ├── SecurityConfig.java
+│   │   │   │   │   └── WebConfig.java
+│   │   │   │   ├── controller/
+│   │   │   │   │   ├── AuthController.java
+│   │   │   │   │   └── FileController.java
+│   │   │   │   ├── dto/
+│   │   │   │   │   ├── FileInfoDto.java
+│   │   │   │   │   ├── LoginRequest.java
+│   │   │   │   │   ├── LoginResponse.java
+│   │   │   │   │   └── RenameFileRequest.java
+│   │   │   │   ├── entity/
+│   │   │   │   │   ├── FileInfo.java
+│   │   │   │   │   └── User.java
+│   │   │   │   ├── exception/
+│   │   │   │   │   ├── AuthException.java
+│   │   │   │   │   ├── ErrorResponse.java
+│   │   │   │   │   ├── FileNotFoundException.java
+│   │   │   │   │   ├── GlobalExceptionHandler.java
+│   │   │   │   │   └── UnauthorizedException.java
+│   │   │   │   ├── interceptor/
+│   │   │   │   │   └── AuthInterceptor.java
+│   │   │   │   ├── repository/
+│   │   │   │   │   ├── FileRepository.java
+│   │   │   │   │   └── UserRepository.java
+│   │   │   │   ├── service/
+│   │   │   │   │   ├── AuthService.java
+│   │   │   │   │   └── FileService.java
+│   │   │   │   └── CloudServiceApplication.java
+│   │   │   └── resources/
+│   │   │       ├── application.yml
+│   │   │       └── data.sql
+│   │   └── test/
+│   │       └── java/ru/netology/cloudService/
+│   │           ├── integration/
+│   │           │   ├── BaseIntegrationTest.java
+│   │           │   ├── AuthControllerIntegrationTest.java
+│   │           │   ├── AuthServiceIntegrationTest.java
+│   │           │   └── FileServiceIntegrationTest.java
+│   │           ├── service/
+│   │           │   ├── AuthServiceTest.java
+│   │           │   └── FileServiceTest.java
+│   │           └── PasswordHashGeneratorTest.java
+```
+
