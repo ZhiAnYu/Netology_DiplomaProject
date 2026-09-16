@@ -65,7 +65,7 @@ class FileServiceTest {
             fileService.uploadFile(testUser, "test.txt", mockFile);
 
             // Then
-            Path savedFile = tempDir.resolve("test.txt");
+            Path savedFile = tempDir.resolve("1").resolve("test.txt");
             assertTrue(Files.exists(savedFile), "Файл должен быть создан на диске");
             assertEquals("Hello, World!", Files.readString(savedFile));
 
@@ -162,8 +162,10 @@ class FileServiceTest {
         @DisplayName("Успешное скачивание файла")
         void downloadFile_shouldReturnResource_whenFileExists() throws IOException {
             // Given
-            // Создаём реальный файл в tempDir
-            Path testFile = tempDir.resolve("test.txt");
+            // Создаём реальный файл в папке пользователя (id=1) внутри tempDir
+            Path userFolder = tempDir.resolve("1");
+            Files.createDirectories(userFolder);
+            Path testFile = userFolder.resolve("test.txt");
             Files.writeString(testFile, "Hello, World!");
 
             FileInfo fileInfo = FileInfo.builder()
@@ -275,7 +277,9 @@ class FileServiceTest {
         @DisplayName("Успешное переименование файла")
         void renameFile_shouldRenameOnDiskAndDatabase() throws IOException {
             // Given
-            Path oldFile = tempDir.resolve("old.txt");
+            Path userFolder = tempDir.resolve("1");
+            Files.createDirectories(userFolder);
+            Path oldFile = userFolder.resolve("old.txt");
             Files.writeString(oldFile, "content");
 
             FileInfo fileInfo = FileInfo.builder()
@@ -299,8 +303,9 @@ class FileServiceTest {
             // Then
             // 1. Файл на диске переименован
             assertFalse(Files.exists(oldFile), "Старый файл должен исчезнуть");
-            assertTrue(Files.exists(tempDir.resolve("new.txt")), "Новый файл должен появиться");
-            assertEquals("content", Files.readString(tempDir.resolve("new.txt")));
+            Path newFile = userFolder.resolve("new.txt");
+            assertTrue(Files.exists(newFile), "Новый файл должен появиться в папке пользователя");
+            assertEquals("content", Files.readString(newFile));
 
             // 2. В БД обновлено имя
             verify(fileRepository).save(fileInfo);

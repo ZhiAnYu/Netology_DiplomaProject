@@ -3513,3 +3513,1641 @@ org.springframework.web.multipart.MultipartException: Current request is not a m
 2026-09-16 17:15:30.472 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-09-16 17:15:30.476 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-09-16 17:15:30.479 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-09-16 17:50:03.753 [restartedMain] INFO  r.n.c.CloudServiceApplication - Starting CloudServiceApplication using Java 17.0.19 with PID 12888 (C:\Users\CheeKa\Documents\Netology_Java\MSA\Netology_DiplomaProject\cloudService\target\classes started by CheeKa in C:\Users\CheeKa\Documents\Netology_Java\MSA\Netology_DiplomaProject\cloudService)
+2026-09-16 17:50:03.758 [restartedMain] INFO  r.n.c.CloudServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-16 17:50:03.822 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-16 17:50:03.822 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-16 17:50:04.684 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-16 17:50:04.751 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 2 JPA repository interfaces.
+2026-09-16 17:50:05.359 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-16 17:50:05.373 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-16 17:50:05.373 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-09-16 17:50:05.418 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/cloud] - Initializing Spring embedded WebApplicationContext
+2026-09-16 17:50:05.419 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1596 ms
+2026-09-16 17:50:05.522 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-09-16 17:50:05.719 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@59a1a370
+2026-09-16 17:50:05.720 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-09-16 17:50:05.799 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-16 17:50:05.853 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+2026-09-16 17:50:05.889 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-09-16 17:50:06.287 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-16 17:50:06.359 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-16 17:50:06.380 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.24
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-16 17:50:07.309 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-16 17:50:07.410 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-16 17:50:07.775 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-16 17:50:07.782 [restartedMain] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\Documents\Netology_Java\MSA\Netology_DiplomaProject\cloudService\files
+2026-09-16 17:50:07.829 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-16 17:50:08.172 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-09-16 17:50:08.206 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/cloud'
+2026-09-16 17:50:08.216 [restartedMain] INFO  r.n.c.CloudServiceApplication - Started CloudServiceApplication in 5.122 seconds (process running for 5.76)
+2026-09-16 17:50:16.255 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[localhost].[/cloud] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-16 17:50:16.255 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-09-16 17:50:16.257 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-09-16 17:50:16.411 [http-nio-8080-exec-2] INFO  r.n.cloudService.service.AuthService - Попытка входа пользователя: user3
+2026-09-16 17:50:16.597 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.login=?
+2026-09-16 17:50:16.750 [http-nio-8080-exec-2] INFO  r.n.cloudService.service.AuthService - Успешный вход пользователя: user3
+2026-09-16 17:50:16.771 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    update
+        users 
+    set
+        auth_token=?,
+        login=?,
+        password=? 
+    where
+        id=?
+2026-09-16 17:51:38.394 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 17:51:38.429 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id,
+        fi1_0.deleted,
+        fi1_0.filename,
+        fi1_0.size,
+        fi1_0.user_id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+    fetch
+        first ? rows only
+2026-09-16 17:52:16.628 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 17:52:16.635 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id,
+        fi1_0.deleted,
+        fi1_0.filename,
+        fi1_0.size,
+        fi1_0.user_id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+    fetch
+        first ? rows only
+2026-09-16 17:52:45.388 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 17:52:45.393 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id,
+        fi1_0.deleted,
+        fi1_0.filename,
+        fi1_0.size,
+        fi1_0.user_id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+    fetch
+        first ? rows only
+2026-09-16 18:00:53.805 [http-nio-8080-exec-10] INFO  r.n.cloudService.service.AuthService - Попытка входа пользователя: user1
+2026-09-16 18:00:53.806 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.login=?
+2026-09-16 18:00:53.898 [http-nio-8080-exec-10] INFO  r.n.cloudService.service.AuthService - Успешный вход пользователя: user1
+2026-09-16 18:00:53.901 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    update
+        users 
+    set
+        auth_token=?,
+        login=?,
+        password=? 
+    where
+        id=?
+2026-09-16 18:00:53.936 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:00:53.947 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id,
+        fi1_0.deleted,
+        fi1_0.filename,
+        fi1_0.size,
+        fi1_0.user_id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+    fetch
+        first ? rows only
+2026-09-16 18:01:13.310 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:01:13.315 [http-nio-8080-exec-5] INFO  r.n.cloudService.service.FileService - Попытка загрузки файла: testFromUser1.txt для пользователя: user1
+2026-09-16 18:01:13.319 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+        and fi1_0.filename=? 
+    fetch
+        first ? rows only
+2026-09-16 18:01:13.325 [http-nio-8080-exec-5] INFO  r.n.cloudService.service.FileService - Файл успешно сохранён на диск: C:\Users\CheeKa\Documents\Netology_Java\MSA\Netology_DiplomaProject\cloudService\files\7\testFromUser1.txt
+2026-09-16 18:01:13.334 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        files
+        (deleted, filename, size, user_id) 
+    values
+        (?, ?, ?, ?)
+2026-09-16 18:01:13.351 [http-nio-8080-exec-5] INFO  r.n.cloudService.service.FileService - Метаданные файла сохранены в БД
+2026-09-16 18:01:15.387 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:01:15.395 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id,
+        fi1_0.deleted,
+        fi1_0.filename,
+        fi1_0.size,
+        fi1_0.user_id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+    fetch
+        first ? rows only
+2026-09-16 18:01:29.332 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:01:29.345 [http-nio-8080-exec-7] INFO  r.n.cloudService.service.FileService - Попытка переименования файла: testFromUser1.txt -> 692.txt для пользователя: user1
+2026-09-16 18:01:29.348 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id,
+        fi1_0.deleted,
+        fi1_0.filename,
+        fi1_0.size,
+        fi1_0.user_id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+        and fi1_0.filename=?
+2026-09-16 18:01:29.352 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+        and fi1_0.filename=? 
+    fetch
+        first ? rows only
+2026-09-16 18:01:29.356 [http-nio-8080-exec-7] INFO  r.n.cloudService.service.FileService - Файл успешно переименован на диске
+2026-09-16 18:01:29.357 [http-nio-8080-exec-7] INFO  r.n.cloudService.service.FileService - Имя файла обновлено в БД
+2026-09-16 18:01:29.358 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    update
+        files 
+    set
+        deleted=?,
+        filename=?,
+        size=?,
+        user_id=? 
+    where
+        id=?
+2026-09-16 18:01:36.840 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:01:36.846 [http-nio-8080-exec-8] INFO  r.n.cloudService.service.FileService - Попытка переименования файла: 692.txt -> 913.txt для пользователя: user1
+2026-09-16 18:01:36.848 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id,
+        fi1_0.deleted,
+        fi1_0.filename,
+        fi1_0.size,
+        fi1_0.user_id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+        and fi1_0.filename=?
+2026-09-16 18:01:36.853 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+        and fi1_0.filename=? 
+    fetch
+        first ? rows only
+2026-09-16 18:01:36.858 [http-nio-8080-exec-8] INFO  r.n.cloudService.service.FileService - Файл успешно переименован на диске
+2026-09-16 18:01:36.859 [http-nio-8080-exec-8] INFO  r.n.cloudService.service.FileService - Имя файла обновлено в БД
+2026-09-16 18:01:36.860 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    update
+        files 
+    set
+        deleted=?,
+        filename=?,
+        size=?,
+        user_id=? 
+    where
+        id=?
+2026-09-16 18:01:45.950 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:01:45.956 [http-nio-8080-exec-1] INFO  r.n.cloudService.service.FileService - Попытка скачивания файла: 913.txt для пользователя: user1
+2026-09-16 18:01:45.960 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id,
+        fi1_0.deleted,
+        fi1_0.filename,
+        fi1_0.size,
+        fi1_0.user_id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+        and fi1_0.filename=?
+2026-09-16 18:01:45.964 [http-nio-8080-exec-1] INFO  r.n.cloudService.service.FileService - Файл готов к скачиванию: 913.txt
+2026-09-16 18:01:59.728 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:01:59.736 [http-nio-8080-exec-2] INFO  r.n.cloudService.service.FileService - Попытка удаления файла: 913.txt для пользователя: user1
+2026-09-16 18:01:59.739 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id,
+        fi1_0.deleted,
+        fi1_0.filename,
+        fi1_0.size,
+        fi1_0.user_id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+        and fi1_0.filename=?
+2026-09-16 18:01:59.745 [http-nio-8080-exec-2] INFO  r.n.cloudService.service.FileService - Файл 913.txt помечен как удаленный (soft delete)
+2026-09-16 18:01:59.747 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    UPDATE
+        files 
+    SET
+        deleted = true 
+    WHERE
+        id = ?
+2026-09-16 18:02:01.772 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:02:01.782 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id,
+        fi1_0.deleted,
+        fi1_0.filename,
+        fi1_0.size,
+        fi1_0.user_id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+    fetch
+        first ? rows only
+2026-09-16 18:02:19.600 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:02:19.603 [http-nio-8080-exec-6] INFO  r.n.cloudService.service.FileService - Попытка загрузки файла: test2.txt для пользователя: user1
+2026-09-16 18:02:19.605 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+        and fi1_0.filename=? 
+    fetch
+        first ? rows only
+2026-09-16 18:02:19.609 [http-nio-8080-exec-6] INFO  r.n.cloudService.service.FileService - Файл успешно сохранён на диск: C:\Users\CheeKa\Documents\Netology_Java\MSA\Netology_DiplomaProject\cloudService\files\7\test2.txt
+2026-09-16 18:02:19.610 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        files
+        (deleted, filename, size, user_id) 
+    values
+        (?, ?, ?, ?)
+2026-09-16 18:02:19.612 [http-nio-8080-exec-6] INFO  r.n.cloudService.service.FileService - Метаданные файла сохранены в БД
+2026-09-16 18:02:21.644 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:02:21.668 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id,
+        fi1_0.deleted,
+        fi1_0.filename,
+        fi1_0.size,
+        fi1_0.user_id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+    fetch
+        first ? rows only
+2026-09-16 18:02:25.328 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:02:25.333 [http-nio-8080-exec-9] INFO  r.n.cloudService.service.FileService - Попытка переименования файла: test2.txt -> 648.txt для пользователя: user1
+2026-09-16 18:02:25.335 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id,
+        fi1_0.deleted,
+        fi1_0.filename,
+        fi1_0.size,
+        fi1_0.user_id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+        and fi1_0.filename=?
+2026-09-16 18:02:25.340 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+        and fi1_0.filename=? 
+    fetch
+        first ? rows only
+2026-09-16 18:02:25.343 [http-nio-8080-exec-9] INFO  r.n.cloudService.service.FileService - Файл успешно переименован на диске
+2026-09-16 18:02:25.344 [http-nio-8080-exec-9] INFO  r.n.cloudService.service.FileService - Имя файла обновлено в БД
+2026-09-16 18:02:25.344 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    update
+        files 
+    set
+        deleted=?,
+        filename=?,
+        size=?,
+        user_id=? 
+    where
+        id=?
+2026-09-16 18:04:53.666 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:04:53.674 [http-nio-8080-exec-2] INFO  r.n.cloudService.service.FileService - Попытка переименования файла: 648.txt -> 824.txt для пользователя: user1
+2026-09-16 18:04:53.676 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id,
+        fi1_0.deleted,
+        fi1_0.filename,
+        fi1_0.size,
+        fi1_0.user_id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+        and fi1_0.filename=?
+2026-09-16 18:04:53.681 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+        and fi1_0.filename=? 
+    fetch
+        first ? rows only
+2026-09-16 18:04:53.683 [http-nio-8080-exec-2] INFO  r.n.cloudService.service.FileService - Файл успешно переименован на диске
+2026-09-16 18:04:53.684 [http-nio-8080-exec-2] INFO  r.n.cloudService.service.FileService - Имя файла обновлено в БД
+2026-09-16 18:04:53.685 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    update
+        files 
+    set
+        deleted=?,
+        filename=?,
+        size=?,
+        user_id=? 
+    where
+        id=?
+2026-09-16 18:04:58.070 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:04:58.076 [http-nio-8080-exec-5] INFO  r.n.cloudService.service.FileService - Попытка переименования файла: 824.txt -> 545.txt для пользователя: user1
+2026-09-16 18:04:58.078 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id,
+        fi1_0.deleted,
+        fi1_0.filename,
+        fi1_0.size,
+        fi1_0.user_id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+        and fi1_0.filename=?
+2026-09-16 18:04:58.083 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+        and fi1_0.filename=? 
+    fetch
+        first ? rows only
+2026-09-16 18:04:58.086 [http-nio-8080-exec-5] INFO  r.n.cloudService.service.FileService - Файл успешно переименован на диске
+2026-09-16 18:04:58.087 [http-nio-8080-exec-5] INFO  r.n.cloudService.service.FileService - Имя файла обновлено в БД
+2026-09-16 18:04:58.088 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    update
+        files 
+    set
+        deleted=?,
+        filename=?,
+        size=?,
+        user_id=? 
+    where
+        id=?
+2026-09-16 18:05:13.026 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:05:13.031 [http-nio-8080-exec-4] INFO  r.n.cloudService.service.FileService - Попытка загрузки файла: test2FromUser2.txt для пользователя: user1
+2026-09-16 18:05:13.034 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+        and fi1_0.filename=? 
+    fetch
+        first ? rows only
+2026-09-16 18:05:13.037 [http-nio-8080-exec-4] INFO  r.n.cloudService.service.FileService - Файл успешно сохранён на диск: C:\Users\CheeKa\Documents\Netology_Java\MSA\Netology_DiplomaProject\cloudService\files\7\test2FromUser2.txt
+2026-09-16 18:05:13.038 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        files
+        (deleted, filename, size, user_id) 
+    values
+        (?, ?, ?, ?)
+2026-09-16 18:05:13.041 [http-nio-8080-exec-4] INFO  r.n.cloudService.service.FileService - Метаданные файла сохранены в БД
+2026-09-16 18:05:15.058 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:05:15.072 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id,
+        fi1_0.deleted,
+        fi1_0.filename,
+        fi1_0.size,
+        fi1_0.user_id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+    fetch
+        first ? rows only
+2026-09-16 18:05:18.421 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:05:18.426 [http-nio-8080-exec-8] INFO  r.n.cloudService.service.FileService - Попытка переименования файла: test2FromUser2.txt -> 461.txt для пользователя: user1
+2026-09-16 18:05:18.428 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id,
+        fi1_0.deleted,
+        fi1_0.filename,
+        fi1_0.size,
+        fi1_0.user_id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+        and fi1_0.filename=?
+2026-09-16 18:05:18.432 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+        and fi1_0.filename=? 
+    fetch
+        first ? rows only
+2026-09-16 18:05:18.435 [http-nio-8080-exec-8] INFO  r.n.cloudService.service.FileService - Файл успешно переименован на диске
+2026-09-16 18:05:18.436 [http-nio-8080-exec-8] INFO  r.n.cloudService.service.FileService - Имя файла обновлено в БД
+2026-09-16 18:05:18.436 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    update
+        files 
+    set
+        deleted=?,
+        filename=?,
+        size=?,
+        user_id=? 
+    where
+        id=?
+2026-09-16 18:05:30.709 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:05:30.719 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:05:30.749 [http-nio-8080-exec-1] WARN  r.n.c.e.GlobalExceptionHandler - Ошибка авторизации: Invalid token
+2026-09-16 18:05:30.765 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [ru.netology.cloudService.exception.AuthException: Invalid token]
+2026-09-16 18:05:44.732 [http-nio-8080-exec-2] INFO  r.n.cloudService.service.AuthService - Попытка входа пользователя: user2
+2026-09-16 18:05:44.733 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.login=?
+2026-09-16 18:05:44.829 [http-nio-8080-exec-2] INFO  r.n.cloudService.service.AuthService - Успешный вход пользователя: user2
+2026-09-16 18:05:44.830 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    update
+        users 
+    set
+        auth_token=?,
+        login=?,
+        password=? 
+    where
+        id=?
+2026-09-16 18:05:44.849 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:05:44.857 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id,
+        fi1_0.deleted,
+        fi1_0.filename,
+        fi1_0.size,
+        fi1_0.user_id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+    fetch
+        first ? rows only
+2026-09-16 18:05:54.873 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:05:54.877 [http-nio-8080-exec-5] INFO  r.n.cloudService.service.FileService - Попытка загрузки файла: test2.txt для пользователя: user2
+2026-09-16 18:05:54.879 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+        and fi1_0.filename=? 
+    fetch
+        first ? rows only
+2026-09-16 18:05:54.883 [http-nio-8080-exec-5] INFO  r.n.cloudService.service.FileService - Файл успешно сохранён на диск: C:\Users\CheeKa\Documents\Netology_Java\MSA\Netology_DiplomaProject\cloudService\files\8\test2.txt
+2026-09-16 18:05:54.885 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        files
+        (deleted, filename, size, user_id) 
+    values
+        (?, ?, ?, ?)
+2026-09-16 18:05:54.890 [http-nio-8080-exec-5] INFO  r.n.cloudService.service.FileService - Метаданные файла сохранены в БД
+2026-09-16 18:05:56.906 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:05:56.911 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id,
+        fi1_0.deleted,
+        fi1_0.filename,
+        fi1_0.size,
+        fi1_0.user_id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+    fetch
+        first ? rows only
+2026-09-16 18:06:04.966 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:06:04.974 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:06:04.986 [http-nio-8080-exec-4] WARN  r.n.c.e.GlobalExceptionHandler - Ошибка авторизации: Invalid token
+2026-09-16 18:06:04.987 [http-nio-8080-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [ru.netology.cloudService.exception.AuthException: Invalid token]
+2026-09-16 18:13:47.554 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-16 18:13:47.969 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-09-16 18:13:47.980 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-16 18:13:47.993 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-09-16 18:13:47.997 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-09-16 18:14:36.379 [main] INFO  r.n.c.CloudServiceApplicationTests - Starting CloudServiceApplicationTests using Java 17.0.19 with PID 10788 (started by CheeKa in C:\Users\CheeKa\Documents\Netology_Java\MSA\Netology_DiplomaProject\cloudService)
+2026-09-16 18:14:36.381 [main] INFO  r.n.c.CloudServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-09-16 18:14:37.788 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-16 18:14:37.931 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 120 ms. Found 2 JPA repository interfaces.
+2026-09-16 18:14:38.771 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-09-16 18:14:39.188 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3ff26c9
+2026-09-16 18:14:39.193 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-09-16 18:14:39.466 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-16 18:14:39.690 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+2026-09-16 18:14:39.824 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-09-16 18:14:40.183 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-16 18:14:40.298 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-16 18:14:40.331 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.24
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-16 18:14:41.526 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-16 18:14:41.662 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-16 18:14:42.726 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-16 18:14:42.772 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\Documents\Netology_Java\MSA\Netology_DiplomaProject\cloudService\files
+2026-09-16 18:14:43.225 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-16 18:14:44.402 [main] INFO  r.n.c.CloudServiceApplicationTests - Started CloudServiceApplicationTests in 8.687 seconds (process running for 12.5)
+2026-09-16 18:14:44.500 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.netology.cloudService.DatabaseConnectionTest]: DatabaseConnectionTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-16 18:14:44.506 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.netology.cloudService.CloudServiceApplication for test class ru.netology.cloudService.DatabaseConnectionTest
+2026-09-16 18:14:44.648 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        users
+        (auth_token, login, password) 
+    values
+        (?, ?, ?)
+2026-09-16 18:14:45.082 [main] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.login=?
+2026-09-16 18:14:45.123 [main] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2026-09-16 18:14:45.142 [main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        users 
+    where
+        id=?
+2026-09-16 18:14:45.207 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.netology.cloudService.integration.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-16 18:14:45.229 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.netology.cloudService.CloudServiceApplication for test class ru.netology.cloudService.integration.AuthControllerIntegrationTest
+2026-09-16 18:14:45.300 [main] INFO  o.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2026-09-16 18:14:45.305 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2026-09-16 18:14:45.803 [main] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2026-09-16 18:14:45.816 [main] INFO  o.t.d.DockerMachineClientProviderStrategy - docker-machine executable was not found on PATH ([C:\Python314\Scripts\, C:\Python314\, C:\Program Files (x86)\Common Files\Oracle\Java\javapath, C:\WINDOWS\system32, C:\WINDOWS, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\Intel\WiFi\bin\, C:\Program Files\Common Files\Intel\WirelessCommon\, C:\Program Files\Git\cmd, C:\Program Files\Docker\Docker\resources\bin, C:\Program Files\nodejs\, C:\ProgramData\chocolatey\bin, C:\Users\CheeKa\AppData\Local\Microsoft\WindowsApps, C:\Users\CheeKa\AppData\Local\Programs\Microsoft VS Code\bin, C:\Users\CheeKa\AppData\Roaming\npm])
+2026-09-16 18:14:45.817 [main] ERROR o.t.d.DockerClientProviderStrategy - Could not find a valid Docker environment. Please check configuration. Attempted configurations were:
+As no valid configuration was found, execution cannot continue.
+See https://java.testcontainers.org/on_failure.html for more details.
+2026-09-16 18:14:45.854 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.netology.cloudService.integration.AuthServiceIntegrationTest]: AuthServiceIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-16 18:14:45.859 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.netology.cloudService.CloudServiceApplication for test class ru.netology.cloudService.integration.AuthServiceIntegrationTest
+2026-09-16 18:14:45.898 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.netology.cloudService.integration.FileServiceIntegrationTest]: FileServiceIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-16 18:14:45.902 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.netology.cloudService.CloudServiceApplication for test class ru.netology.cloudService.integration.FileServiceIntegrationTest
+2026-09-16 18:14:46.108 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-15436751522100385288
+2026-09-16 18:14:46.115 [main] INFO  r.n.cloudService.service.FileService - Попытка переименования файла: old.txt -> new.txt для пользователя: user1
+2026-09-16 18:14:46.121 [main] ERROR r.n.cloudService.service.FileService - Ошибка при переименовании файла на диске
+java.nio.file.NoSuchFileException: C:\Users\CheeKa\AppData\Local\Temp\junit-15436751522100385288\1\old.txt
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:334)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:293)
+	at java.base/java.nio.file.Files.move(Files.java:1432)
+	at ru.netology.cloudService.service.FileService.renameFile(FileService.java:140)
+	at ru.netology.cloudService.service.FileServiceTest$RenameFileTests.renameFile_shouldRenameOnDiskAndDatabase(FileServiceTest.java:297)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:775)
+	at org.junit.platform.commons.support.ReflectionSupport.invokeMethod(ReflectionSupport.java:479)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:161)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:152)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:91)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:112)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:94)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:87)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:216)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:212)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:201)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:170)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:94)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:59)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:142)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$1(InterceptingLauncher.java:39)
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25)
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:38)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.executeWithoutCancellationToken(LauncherAdapter.java:60)
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.execute(LauncherAdapter.java:52)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:203)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:168)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:136)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2026-09-16 18:14:46.176 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-11597765612249188097
+2026-09-16 18:14:46.180 [main] INFO  r.n.cloudService.service.FileService - Попытка переименования файла: old.txt -> existing.txt для пользователя: user1
+2026-09-16 18:14:46.196 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-6632602460494418226
+2026-09-16 18:14:46.197 [main] INFO  r.n.cloudService.service.FileService - Попытка переименования файла: nonexistent.txt -> new.txt для пользователя: user1
+2026-09-16 18:14:46.198 [main] WARN  r.n.cloudService.service.FileService - Файл для переименования не найден: nonexistent.txt
+2026-09-16 18:14:46.215 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-2110884684932505002
+2026-09-16 18:14:46.217 [main] INFO  r.n.cloudService.service.FileService - Попытка удаления файла: test.txt для пользователя: user1
+2026-09-16 18:14:46.220 [main] INFO  r.n.cloudService.service.FileService - Файл test.txt помечен как удаленный (soft delete)
+2026-09-16 18:14:46.233 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-12578691903195734471
+2026-09-16 18:14:46.235 [main] INFO  r.n.cloudService.service.FileService - Попытка удаления файла: nonexistent.txt для пользователя: user1
+2026-09-16 18:14:46.237 [main] WARN  r.n.cloudService.service.FileService - Файл для удаления не найден: nonexistent.txt
+2026-09-16 18:14:46.266 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-5719856228625738777
+2026-09-16 18:14:46.271 [main] INFO  r.n.cloudService.service.FileService - Попытка скачивания файла: test.txt для пользователя: user1
+2026-09-16 18:14:46.275 [main] ERROR r.n.cloudService.service.FileService - Файл есть в БД, но отсутствует на диске: C:\Users\CheeKa\AppData\Local\Temp\junit-5719856228625738777\1\test.txt
+2026-09-16 18:14:46.292 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-1235717855285029381
+2026-09-16 18:14:46.295 [main] INFO  r.n.cloudService.service.FileService - Попытка скачивания файла: missing.txt для пользователя: user1
+2026-09-16 18:14:46.296 [main] ERROR r.n.cloudService.service.FileService - Файл есть в БД, но отсутствует на диске: C:\Users\CheeKa\AppData\Local\Temp\junit-1235717855285029381\1\missing.txt
+2026-09-16 18:14:46.309 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-14991747560518661303
+2026-09-16 18:14:46.311 [main] INFO  r.n.cloudService.service.FileService - Попытка скачивания файла: nonexistent.txt для пользователя: user1
+2026-09-16 18:14:46.312 [main] WARN  r.n.cloudService.service.FileService - Файл не найден: nonexistent.txt
+2026-09-16 18:14:46.330 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-10755118359703975894
+2026-09-16 18:14:46.353 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-133088249064426858
+2026-09-16 18:14:46.370 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-2881736770593137751
+2026-09-16 18:14:46.376 [main] INFO  r.n.cloudService.service.FileService - Попытка загрузки файла: test.txt для пользователя: user1
+2026-09-16 18:14:46.396 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-1870071842910644560
+2026-09-16 18:14:46.400 [main] INFO  r.n.cloudService.service.FileService - Попытка загрузки файла: empty.txt для пользователя: user1
+2026-09-16 18:14:46.418 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-8473442476882611148
+2026-09-16 18:14:46.421 [main] INFO  r.n.cloudService.service.FileService - Попытка загрузки файла: test.txt для пользователя: user1
+2026-09-16 18:14:46.427 [main] INFO  r.n.cloudService.service.FileService - Файл успешно сохранён на диск: C:\Users\CheeKa\AppData\Local\Temp\junit-8473442476882611148\1\test.txt
+2026-09-16 18:14:46.428 [main] INFO  r.n.cloudService.service.FileService - Метаданные файла сохранены в БД
+2026-09-16 18:14:46.529 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-16 18:14:46.537 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-09-16 18:14:46.563 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-09-16 19:32:16.436 [main] INFO  r.n.c.CloudServiceApplicationTests - Starting CloudServiceApplicationTests using Java 17.0.19 with PID 14564 (started by CheeKa in C:\Users\CheeKa\Documents\Netology_Java\MSA\Netology_DiplomaProject\cloudService)
+2026-09-16 19:32:16.442 [main] INFO  r.n.c.CloudServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-09-16 19:32:18.251 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-16 19:32:18.409 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 131 ms. Found 2 JPA repository interfaces.
+2026-09-16 19:32:19.268 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-09-16 19:32:19.719 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@46591e98
+2026-09-16 19:32:19.722 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-09-16 19:32:19.957 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-16 19:32:20.129 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+2026-09-16 19:32:20.243 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-09-16 19:32:20.588 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-16 19:32:20.754 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-16 19:32:20.795 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.24
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-16 19:32:23.019 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-16 19:32:23.205 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-16 19:32:24.157 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-16 19:32:24.180 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\Documents\Netology_Java\MSA\Netology_DiplomaProject\cloudService\files
+2026-09-16 19:32:24.555 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-16 19:32:25.593 [main] INFO  r.n.c.CloudServiceApplicationTests - Started CloudServiceApplicationTests in 10.057 seconds (process running for 13.508)
+2026-09-16 19:32:25.702 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.netology.cloudService.DatabaseConnectionTest]: DatabaseConnectionTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-16 19:32:25.711 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.netology.cloudService.CloudServiceApplication for test class ru.netology.cloudService.DatabaseConnectionTest
+2026-09-16 19:32:25.888 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        users
+        (auth_token, login, password) 
+    values
+        (?, ?, ?)
+2026-09-16 19:32:27.058 [main] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.login=?
+2026-09-16 19:32:27.111 [main] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2026-09-16 19:32:27.132 [main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        users 
+    where
+        id=?
+2026-09-16 19:32:27.201 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.netology.cloudService.integration.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-16 19:32:27.238 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.netology.cloudService.CloudServiceApplication for test class ru.netology.cloudService.integration.AuthControllerIntegrationTest
+2026-09-16 19:32:27.413 [main] INFO  o.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2026-09-16 19:32:27.420 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2026-09-16 19:32:27.999 [main] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2026-09-16 19:32:28.019 [main] INFO  o.t.d.DockerMachineClientProviderStrategy - docker-machine executable was not found on PATH ([C:\Python314\Scripts\, C:\Python314\, C:\Program Files (x86)\Common Files\Oracle\Java\javapath, C:\WINDOWS\system32, C:\WINDOWS, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\Intel\WiFi\bin\, C:\Program Files\Common Files\Intel\WirelessCommon\, C:\Program Files\Git\cmd, C:\Program Files\Docker\Docker\resources\bin, C:\Program Files\nodejs\, C:\ProgramData\chocolatey\bin, C:\Users\CheeKa\AppData\Local\Microsoft\WindowsApps, C:\Users\CheeKa\AppData\Local\Programs\Microsoft VS Code\bin, C:\Users\CheeKa\AppData\Roaming\npm])
+2026-09-16 19:32:28.020 [main] ERROR o.t.d.DockerClientProviderStrategy - Could not find a valid Docker environment. Please check configuration. Attempted configurations were:
+As no valid configuration was found, execution cannot continue.
+See https://java.testcontainers.org/on_failure.html for more details.
+2026-09-16 19:32:28.056 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.netology.cloudService.integration.AuthServiceIntegrationTest]: AuthServiceIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-16 19:32:28.061 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.netology.cloudService.CloudServiceApplication for test class ru.netology.cloudService.integration.AuthServiceIntegrationTest
+2026-09-16 19:32:28.113 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.netology.cloudService.integration.FileServiceIntegrationTest]: FileServiceIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-16 19:32:28.118 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.netology.cloudService.CloudServiceApplication for test class ru.netology.cloudService.integration.FileServiceIntegrationTest
+2026-09-16 19:32:28.376 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-15009572503457158366
+2026-09-16 19:32:28.383 [main] INFO  r.n.cloudService.service.FileService - Попытка переименования файла: old.txt -> new.txt для пользователя: user1
+2026-09-16 19:32:28.388 [main] ERROR r.n.cloudService.service.FileService - Ошибка при переименовании файла на диске
+java.nio.file.NoSuchFileException: C:\Users\CheeKa\AppData\Local\Temp\junit-15009572503457158366\1\old.txt
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:334)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:293)
+	at java.base/java.nio.file.Files.move(Files.java:1432)
+	at ru.netology.cloudService.service.FileService.renameFile(FileService.java:140)
+	at ru.netology.cloudService.service.FileServiceTest$RenameFileTests.renameFile_shouldRenameOnDiskAndDatabase(FileServiceTest.java:297)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:775)
+	at org.junit.platform.commons.support.ReflectionSupport.invokeMethod(ReflectionSupport.java:479)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:161)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:152)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:91)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:112)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:94)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:87)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:216)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:212)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:201)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:170)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:94)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:59)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:142)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$1(InterceptingLauncher.java:39)
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25)
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:38)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.executeWithoutCancellationToken(LauncherAdapter.java:60)
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.execute(LauncherAdapter.java:52)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:203)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:168)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:136)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2026-09-16 19:32:28.432 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-337676935233375733
+2026-09-16 19:32:28.435 [main] INFO  r.n.cloudService.service.FileService - Попытка переименования файла: old.txt -> existing.txt для пользователя: user1
+2026-09-16 19:32:28.448 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-4363313083076140857
+2026-09-16 19:32:28.451 [main] INFO  r.n.cloudService.service.FileService - Попытка переименования файла: nonexistent.txt -> new.txt для пользователя: user1
+2026-09-16 19:32:28.452 [main] WARN  r.n.cloudService.service.FileService - Файл для переименования не найден: nonexistent.txt
+2026-09-16 19:32:28.480 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-1402819783137179330
+2026-09-16 19:32:28.481 [main] INFO  r.n.cloudService.service.FileService - Попытка удаления файла: test.txt для пользователя: user1
+2026-09-16 19:32:28.483 [main] INFO  r.n.cloudService.service.FileService - Файл test.txt помечен как удаленный (soft delete)
+2026-09-16 19:32:28.497 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-9110707578877632163
+2026-09-16 19:32:28.499 [main] INFO  r.n.cloudService.service.FileService - Попытка удаления файла: nonexistent.txt для пользователя: user1
+2026-09-16 19:32:28.501 [main] WARN  r.n.cloudService.service.FileService - Файл для удаления не найден: nonexistent.txt
+2026-09-16 19:32:28.519 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-13741302177414896951
+2026-09-16 19:32:28.521 [main] INFO  r.n.cloudService.service.FileService - Попытка скачивания файла: test.txt для пользователя: user1
+2026-09-16 19:32:28.523 [main] ERROR r.n.cloudService.service.FileService - Файл есть в БД, но отсутствует на диске: C:\Users\CheeKa\AppData\Local\Temp\junit-13741302177414896951\1\test.txt
+2026-09-16 19:32:28.541 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-4934320096526643997
+2026-09-16 19:32:28.550 [main] INFO  r.n.cloudService.service.FileService - Попытка скачивания файла: missing.txt для пользователя: user1
+2026-09-16 19:32:28.552 [main] ERROR r.n.cloudService.service.FileService - Файл есть в БД, но отсутствует на диске: C:\Users\CheeKa\AppData\Local\Temp\junit-4934320096526643997\1\missing.txt
+2026-09-16 19:32:28.585 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-17151850229653262039
+2026-09-16 19:32:28.589 [main] INFO  r.n.cloudService.service.FileService - Попытка скачивания файла: nonexistent.txt для пользователя: user1
+2026-09-16 19:32:28.590 [main] WARN  r.n.cloudService.service.FileService - Файл не найден: nonexistent.txt
+2026-09-16 19:32:28.618 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-6952263541180777563
+2026-09-16 19:32:28.630 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-17953779952802715868
+2026-09-16 19:32:28.653 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-6720889911386413997
+2026-09-16 19:32:28.660 [main] INFO  r.n.cloudService.service.FileService - Попытка загрузки файла: test.txt для пользователя: user1
+2026-09-16 19:32:28.683 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-10598674817121019671
+2026-09-16 19:32:28.692 [main] INFO  r.n.cloudService.service.FileService - Попытка загрузки файла: empty.txt для пользователя: user1
+2026-09-16 19:32:28.712 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-10514098259138582036
+2026-09-16 19:32:28.715 [main] INFO  r.n.cloudService.service.FileService - Попытка загрузки файла: test.txt для пользователя: user1
+2026-09-16 19:32:28.718 [main] INFO  r.n.cloudService.service.FileService - Файл успешно сохранён на диск: C:\Users\CheeKa\AppData\Local\Temp\junit-10514098259138582036\1\test.txt
+2026-09-16 19:32:28.719 [main] INFO  r.n.cloudService.service.FileService - Метаданные файла сохранены в БД
+2026-09-16 19:32:28.798 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-16 19:32:28.805 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-09-16 19:32:28.816 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-09-16 19:41:50.284 [main] INFO  r.n.c.CloudServiceApplicationTests - Starting CloudServiceApplicationTests using Java 17.0.19 with PID 3968 (started by CheeKa in C:\Users\CheeKa\Documents\Netology_Java\MSA\Netology_DiplomaProject\cloudService)
+2026-09-16 19:41:50.287 [main] INFO  r.n.c.CloudServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-09-16 19:41:51.706 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-16 19:41:51.827 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 103 ms. Found 2 JPA repository interfaces.
+2026-09-16 19:41:52.719 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-09-16 19:41:53.155 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1a06602f
+2026-09-16 19:41:53.158 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-09-16 19:41:53.405 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-16 19:41:53.605 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+2026-09-16 19:41:53.715 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-09-16 19:41:54.068 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-16 19:41:54.217 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-16 19:41:54.247 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.24
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-16 19:41:55.634 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-16 19:41:55.765 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-16 19:41:56.526 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-16 19:41:56.541 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\Documents\Netology_Java\MSA\Netology_DiplomaProject\cloudService\files
+2026-09-16 19:41:56.817 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-16 19:41:57.580 [main] INFO  r.n.c.CloudServiceApplicationTests - Started CloudServiceApplicationTests in 8.138 seconds (process running for 12.313)
+2026-09-16 19:41:57.645 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.netology.cloudService.DatabaseConnectionTest]: DatabaseConnectionTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-16 19:41:57.652 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.netology.cloudService.CloudServiceApplication for test class ru.netology.cloudService.DatabaseConnectionTest
+2026-09-16 19:41:57.803 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        users
+        (auth_token, login, password) 
+    values
+        (?, ?, ?)
+2026-09-16 19:41:58.215 [main] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.login=?
+2026-09-16 19:41:58.248 [main] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2026-09-16 19:41:58.262 [main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        users 
+    where
+        id=?
+2026-09-16 19:41:58.310 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.netology.cloudService.integration.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-16 19:41:58.329 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.netology.cloudService.CloudServiceApplication for test class ru.netology.cloudService.integration.AuthControllerIntegrationTest
+2026-09-16 19:41:58.379 [main] INFO  o.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2026-09-16 19:41:58.383 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2026-09-16 19:41:58.795 [main] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2026-09-16 19:41:58.806 [main] INFO  o.t.d.DockerMachineClientProviderStrategy - docker-machine executable was not found on PATH ([C:\Python314\Scripts\, C:\Python314\, C:\Program Files (x86)\Common Files\Oracle\Java\javapath, C:\WINDOWS\system32, C:\WINDOWS, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\Intel\WiFi\bin\, C:\Program Files\Common Files\Intel\WirelessCommon\, C:\Program Files\Git\cmd, C:\Program Files\Docker\Docker\resources\bin, C:\Program Files\nodejs\, C:\ProgramData\chocolatey\bin, C:\Users\CheeKa\AppData\Local\Microsoft\WindowsApps, C:\Users\CheeKa\AppData\Local\Programs\Microsoft VS Code\bin, C:\Users\CheeKa\AppData\Roaming\npm])
+2026-09-16 19:41:58.807 [main] ERROR o.t.d.DockerClientProviderStrategy - Could not find a valid Docker environment. Please check configuration. Attempted configurations were:
+As no valid configuration was found, execution cannot continue.
+See https://java.testcontainers.org/on_failure.html for more details.
+2026-09-16 19:41:58.823 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.netology.cloudService.integration.AuthServiceIntegrationTest]: AuthServiceIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-16 19:41:58.827 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.netology.cloudService.CloudServiceApplication for test class ru.netology.cloudService.integration.AuthServiceIntegrationTest
+2026-09-16 19:41:58.854 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.netology.cloudService.integration.FileServiceIntegrationTest]: FileServiceIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-16 19:41:58.858 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.netology.cloudService.CloudServiceApplication for test class ru.netology.cloudService.integration.FileServiceIntegrationTest
+2026-09-16 19:41:58.988 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-13048037207817445552
+2026-09-16 19:41:58.991 [main] INFO  r.n.cloudService.service.FileService - Попытка переименования файла: old.txt -> new.txt для пользователя: user1
+2026-09-16 19:41:58.994 [main] ERROR r.n.cloudService.service.FileService - Ошибка при переименовании файла на диске
+java.nio.file.NoSuchFileException: C:\Users\CheeKa\AppData\Local\Temp\junit-13048037207817445552\1\old.txt
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:334)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:293)
+	at java.base/java.nio.file.Files.move(Files.java:1432)
+	at ru.netology.cloudService.service.FileService.renameFile(FileService.java:140)
+	at ru.netology.cloudService.service.FileServiceTest$RenameFileTests.renameFile_shouldRenameOnDiskAndDatabase(FileServiceTest.java:297)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:775)
+	at org.junit.platform.commons.support.ReflectionSupport.invokeMethod(ReflectionSupport.java:479)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:161)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:152)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:91)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:112)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:94)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:87)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:216)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:212)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:201)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:170)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:94)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:59)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:142)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$1(InterceptingLauncher.java:39)
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25)
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:38)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.executeWithoutCancellationToken(LauncherAdapter.java:60)
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.execute(LauncherAdapter.java:52)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:203)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:168)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:136)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2026-09-16 19:41:59.017 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-1914569965469337436
+2026-09-16 19:41:59.021 [main] INFO  r.n.cloudService.service.FileService - Попытка переименования файла: old.txt -> existing.txt для пользователя: user1
+2026-09-16 19:41:59.030 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-63674981308136151
+2026-09-16 19:41:59.032 [main] INFO  r.n.cloudService.service.FileService - Попытка переименования файла: nonexistent.txt -> new.txt для пользователя: user1
+2026-09-16 19:41:59.032 [main] WARN  r.n.cloudService.service.FileService - Файл для переименования не найден: nonexistent.txt
+2026-09-16 19:41:59.064 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-17489429542559355997
+2026-09-16 19:41:59.066 [main] INFO  r.n.cloudService.service.FileService - Попытка удаления файла: test.txt для пользователя: user1
+2026-09-16 19:41:59.069 [main] INFO  r.n.cloudService.service.FileService - Файл test.txt помечен как удаленный (soft delete)
+2026-09-16 19:41:59.081 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-17582115819171938120
+2026-09-16 19:41:59.083 [main] INFO  r.n.cloudService.service.FileService - Попытка удаления файла: nonexistent.txt для пользователя: user1
+2026-09-16 19:41:59.084 [main] WARN  r.n.cloudService.service.FileService - Файл для удаления не найден: nonexistent.txt
+2026-09-16 19:41:59.108 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-3897894887294325395
+2026-09-16 19:41:59.111 [main] INFO  r.n.cloudService.service.FileService - Попытка скачивания файла: test.txt для пользователя: user1
+2026-09-16 19:41:59.123 [main] ERROR r.n.cloudService.service.FileService - Файл есть в БД, но отсутствует на диске: C:\Users\CheeKa\AppData\Local\Temp\junit-3897894887294325395\1\test.txt
+2026-09-16 19:41:59.142 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-1441249003957215433
+2026-09-16 19:41:59.143 [main] INFO  r.n.cloudService.service.FileService - Попытка скачивания файла: missing.txt для пользователя: user1
+2026-09-16 19:41:59.146 [main] ERROR r.n.cloudService.service.FileService - Файл есть в БД, но отсутствует на диске: C:\Users\CheeKa\AppData\Local\Temp\junit-1441249003957215433\1\missing.txt
+2026-09-16 19:41:59.161 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-5489698276105201121
+2026-09-16 19:41:59.163 [main] INFO  r.n.cloudService.service.FileService - Попытка скачивания файла: nonexistent.txt для пользователя: user1
+2026-09-16 19:41:59.164 [main] WARN  r.n.cloudService.service.FileService - Файл не найден: nonexistent.txt
+2026-09-16 19:41:59.181 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-16210571993372403264
+2026-09-16 19:41:59.199 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-15607119631049833316
+2026-09-16 19:41:59.226 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-15194276314132481324
+2026-09-16 19:41:59.228 [main] INFO  r.n.cloudService.service.FileService - Попытка загрузки файла: test.txt для пользователя: user1
+2026-09-16 19:41:59.244 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-18072772304790033586
+2026-09-16 19:41:59.246 [main] INFO  r.n.cloudService.service.FileService - Попытка загрузки файла: empty.txt для пользователя: user1
+2026-09-16 19:41:59.262 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-5398810964271227503
+2026-09-16 19:41:59.264 [main] INFO  r.n.cloudService.service.FileService - Попытка загрузки файла: test.txt для пользователя: user1
+2026-09-16 19:41:59.267 [main] INFO  r.n.cloudService.service.FileService - Файл успешно сохранён на диск: C:\Users\CheeKa\AppData\Local\Temp\junit-5398810964271227503\1\test.txt
+2026-09-16 19:41:59.269 [main] INFO  r.n.cloudService.service.FileService - Метаданные файла сохранены в БД
+2026-09-16 19:41:59.350 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-16 19:41:59.358 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-09-16 19:41:59.377 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-09-16 20:06:30.999 [main] INFO  r.n.c.CloudServiceApplicationTests - Starting CloudServiceApplicationTests using Java 17.0.19 with PID 5608 (started by CheeKa in C:\Users\CheeKa\Documents\Netology_Java\MSA\Netology_DiplomaProject\cloudService)
+2026-09-16 20:06:31.002 [main] INFO  r.n.c.CloudServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-09-16 20:06:32.654 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-16 20:06:32.767 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 92 ms. Found 2 JPA repository interfaces.
+2026-09-16 20:06:33.551 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-09-16 20:06:33.985 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@46591e98
+2026-09-16 20:06:33.988 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-09-16 20:06:34.200 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-16 20:06:34.377 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+2026-09-16 20:06:34.479 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-09-16 20:06:34.791 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-16 20:06:34.929 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-16 20:06:34.958 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.24
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-16 20:06:36.506 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-16 20:06:36.644 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-16 20:06:37.369 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-16 20:06:37.402 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\Documents\Netology_Java\MSA\Netology_DiplomaProject\cloudService\files
+2026-09-16 20:06:37.703 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-16 20:06:38.529 [main] INFO  r.n.c.CloudServiceApplicationTests - Started CloudServiceApplicationTests in 8.306 seconds (process running for 12.6)
+2026-09-16 20:06:38.609 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.netology.cloudService.DatabaseConnectionTest]: DatabaseConnectionTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-16 20:06:38.615 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.netology.cloudService.CloudServiceApplication for test class ru.netology.cloudService.DatabaseConnectionTest
+2026-09-16 20:06:38.734 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        users
+        (auth_token, login, password) 
+    values
+        (?, ?, ?)
+2026-09-16 20:06:39.173 [main] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.login=?
+2026-09-16 20:06:39.233 [main] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2026-09-16 20:06:39.255 [main] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        users 
+    where
+        id=?
+2026-09-16 20:06:39.301 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.netology.cloudService.integration.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-16 20:06:39.327 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.netology.cloudService.CloudServiceApplication for test class ru.netology.cloudService.integration.AuthControllerIntegrationTest
+2026-09-16 20:06:39.443 [main] INFO  o.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2026-09-16 20:06:39.452 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2026-09-16 20:06:39.995 [main] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2026-09-16 20:06:40.015 [main] INFO  o.t.d.DockerMachineClientProviderStrategy - docker-machine executable was not found on PATH ([C:\Python314\Scripts\, C:\Python314\, C:\Program Files (x86)\Common Files\Oracle\Java\javapath, C:\WINDOWS\system32, C:\WINDOWS, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\Intel\WiFi\bin\, C:\Program Files\Common Files\Intel\WirelessCommon\, C:\Program Files\Git\cmd, C:\Program Files\Docker\Docker\resources\bin, C:\Program Files\nodejs\, C:\ProgramData\chocolatey\bin, C:\Users\CheeKa\AppData\Local\Microsoft\WindowsApps, C:\Users\CheeKa\AppData\Local\Programs\Microsoft VS Code\bin, C:\Users\CheeKa\AppData\Roaming\npm])
+2026-09-16 20:06:40.017 [main] ERROR o.t.d.DockerClientProviderStrategy - Could not find a valid Docker environment. Please check configuration. Attempted configurations were:
+As no valid configuration was found, execution cannot continue.
+See https://java.testcontainers.org/on_failure.html for more details.
+2026-09-16 20:06:40.043 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.netology.cloudService.integration.AuthServiceIntegrationTest]: AuthServiceIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-16 20:06:40.048 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.netology.cloudService.CloudServiceApplication for test class ru.netology.cloudService.integration.AuthServiceIntegrationTest
+2026-09-16 20:06:40.082 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.netology.cloudService.integration.FileServiceIntegrationTest]: FileServiceIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-16 20:06:40.086 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.netology.cloudService.CloudServiceApplication for test class ru.netology.cloudService.integration.FileServiceIntegrationTest
+2026-09-16 20:06:40.258 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-4653923513546566248
+2026-09-16 20:06:40.265 [main] INFO  r.n.cloudService.service.FileService - Попытка переименования файла: old.txt -> new.txt для пользователя: user1
+2026-09-16 20:06:40.271 [main] INFO  r.n.cloudService.service.FileService - Файл успешно переименован на диске
+2026-09-16 20:06:40.272 [main] INFO  r.n.cloudService.service.FileService - Имя файла обновлено в БД
+2026-09-16 20:06:40.310 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-14639835858598295948
+2026-09-16 20:06:40.312 [main] INFO  r.n.cloudService.service.FileService - Попытка переименования файла: old.txt -> existing.txt для пользователя: user1
+2026-09-16 20:06:40.330 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-10109093111503966465
+2026-09-16 20:06:40.334 [main] INFO  r.n.cloudService.service.FileService - Попытка переименования файла: nonexistent.txt -> new.txt для пользователя: user1
+2026-09-16 20:06:40.339 [main] WARN  r.n.cloudService.service.FileService - Файл для переименования не найден: nonexistent.txt
+2026-09-16 20:06:40.359 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-10124078332884326572
+2026-09-16 20:06:40.361 [main] INFO  r.n.cloudService.service.FileService - Попытка удаления файла: test.txt для пользователя: user1
+2026-09-16 20:06:40.363 [main] INFO  r.n.cloudService.service.FileService - Файл test.txt помечен как удаленный (soft delete)
+2026-09-16 20:06:40.381 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-3416534049495816305
+2026-09-16 20:06:40.384 [main] INFO  r.n.cloudService.service.FileService - Попытка удаления файла: nonexistent.txt для пользователя: user1
+2026-09-16 20:06:40.386 [main] WARN  r.n.cloudService.service.FileService - Файл для удаления не найден: nonexistent.txt
+2026-09-16 20:06:40.406 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-14936938045102954571
+2026-09-16 20:06:40.412 [main] INFO  r.n.cloudService.service.FileService - Попытка скачивания файла: test.txt для пользователя: user1
+2026-09-16 20:06:40.415 [main] INFO  r.n.cloudService.service.FileService - Файл готов к скачиванию: test.txt
+2026-09-16 20:06:40.432 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-10311568211162936168
+2026-09-16 20:06:40.434 [main] INFO  r.n.cloudService.service.FileService - Попытка скачивания файла: missing.txt для пользователя: user1
+2026-09-16 20:06:40.436 [main] ERROR r.n.cloudService.service.FileService - Файл есть в БД, но отсутствует на диске: C:\Users\CheeKa\AppData\Local\Temp\junit-10311568211162936168\1\missing.txt
+2026-09-16 20:06:40.447 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-10620904123278248804
+2026-09-16 20:06:40.449 [main] INFO  r.n.cloudService.service.FileService - Попытка скачивания файла: nonexistent.txt для пользователя: user1
+2026-09-16 20:06:40.450 [main] WARN  r.n.cloudService.service.FileService - Файл не найден: nonexistent.txt
+2026-09-16 20:06:40.467 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-13730269168645602445
+2026-09-16 20:06:40.479 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-11386565976793002376
+2026-09-16 20:06:40.506 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-15440337666624880854
+2026-09-16 20:06:40.508 [main] INFO  r.n.cloudService.service.FileService - Попытка загрузки файла: test.txt для пользователя: user1
+2026-09-16 20:06:40.528 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-18220360905326851577
+2026-09-16 20:06:40.530 [main] INFO  r.n.cloudService.service.FileService - Попытка загрузки файла: empty.txt для пользователя: user1
+2026-09-16 20:06:40.554 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: C:\Users\CheeKa\AppData\Local\Temp\junit-5143530979626235200
+2026-09-16 20:06:40.557 [main] INFO  r.n.cloudService.service.FileService - Попытка загрузки файла: test.txt для пользователя: user1
+2026-09-16 20:06:40.561 [main] INFO  r.n.cloudService.service.FileService - Файл успешно сохранён на диск: C:\Users\CheeKa\AppData\Local\Temp\junit-5143530979626235200\1\test.txt
+2026-09-16 20:06:40.562 [main] INFO  r.n.cloudService.service.FileService - Метаданные файла сохранены в БД
+2026-09-16 20:06:40.637 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-16 20:06:40.647 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-09-16 20:06:40.663 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -13,5 +13,6 @@ public class PasswordHashGeneratorTest {
         System.out.println("=== Хеши для пользователей ===");
         System.out.println("user1/pass123: " + encoder.encode("pass123"));
         System.out.println("user2/pass456: " + encoder.encode("pass456"));
+        System.out.println("user3/pass123: " + encoder.encode("pass123"));
     }
 }

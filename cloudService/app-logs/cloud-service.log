@@ -1,0 +1,561 @@
+2026-09-16 17:36:43.850 [main] INFO  r.n.c.CloudServiceApplication - Starting CloudServiceApplication v0.0.1-SNAPSHOT using Java 17.0.20 with PID 1 (/app/app.jar started by appuser in /app)
+2026-09-16 17:36:43.861 [main] INFO  r.n.c.CloudServiceApplication - The following 1 profile is active: "prod"
+2026-09-16 17:36:45.411 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-16 17:36:45.521 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 87 ms. Found 2 JPA repository interfaces.
+2026-09-16 17:36:46.594 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-16 17:36:46.623 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-16 17:36:46.625 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-09-16 17:36:46.699 [main] INFO  o.a.c.c.C.[.[localhost].[/cloud] - Initializing Spring embedded WebApplicationContext
+2026-09-16 17:36:46.702 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2741 ms
+2026-09-16 17:36:46.915 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-09-16 17:36:47.326 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5921b93c
+2026-09-16 17:36:47.332 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-09-16 17:36:47.369 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Failed to execute SQL script statement #1 of URL [jar:nested:/app/app.jar/!BOOT-INF/classes/!/data.sql]: INSERT INTO users (login, password) SELECT 'user1', '$2a$10$H/BFYpGYif9/TJreA0koE.4TCY.b19Z8VESqAlNseBaMJ6MHN3fBW' WHERE NOT EXISTS (SELECT 1 FROM users WHERE login = 'user1')
+2026-09-16 17:36:47.372 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-09-16 17:36:47.378 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-09-16 17:36:47.392 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-09-16 17:36:47.422 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-09-16 17:36:47.497 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Failed to execute SQL script statement #1 of URL [jar:nested:/app/app.jar/!BOOT-INF/classes/!/data.sql]: INSERT INTO users (login, password) SELECT 'user1', '$2a$10$H/BFYpGYif9/TJreA0koE.4TCY.b19Z8VESqAlNseBaMJ6MHN3fBW' WHERE NOT EXISTS (SELECT 1 FROM users WHERE login = 'user1')
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:328)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at ru.netology.cloudService.CloudServiceApplication.main(CloudServiceApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:106)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Failed to execute SQL script statement #1 of URL [jar:nested:/app/app.jar/!BOOT-INF/classes/!/data.sql]: INSERT INTO users (login, password) SELECT 'user1', '$2a$10$H/BFYpGYif9/TJreA0koE.4TCY.b19Z8VESqAlNseBaMJ6MHN3fBW' WHERE NOT EXISTS (SELECT 1 FROM users WHERE login = 'user1')
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	... 17 common frames omitted
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [jar:nested:/app/app.jar/!BOOT-INF/classes/!/data.sql]: INSERT INTO users (login, password) SELECT 'user1', '$2a$10$H/BFYpGYif9/TJreA0koE.4TCY.b19Z8VESqAlNseBaMJ6MHN3fBW' WHERE NOT EXISTS (SELECT 1 FROM users WHERE login = 'user1')
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:293)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:87)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:146)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:108)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:102)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:77)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
+	... 24 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "users" does not exist
+  Position: 13
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2846)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2531)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:429)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:526)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:436)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:358)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:343)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:314)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	... 34 common frames omitted
+2026-09-16 17:59:48.135 [main] INFO  r.n.c.CloudServiceApplication - Starting CloudServiceApplication v0.0.1-SNAPSHOT using Java 17.0.20 with PID 1 (/app/app.jar started by appuser in /app)
+2026-09-16 17:59:48.143 [main] INFO  r.n.c.CloudServiceApplication - The following 1 profile is active: "prod"
+2026-09-16 17:59:49.733 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-16 17:59:49.855 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 99 ms. Found 2 JPA repository interfaces.
+2026-09-16 17:59:50.877 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-16 17:59:50.904 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-16 17:59:50.906 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-09-16 17:59:50.959 [main] INFO  o.a.c.c.C.[.[localhost].[/cloud] - Initializing Spring embedded WebApplicationContext
+2026-09-16 17:59:50.960 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2711 ms
+2026-09-16 17:59:51.276 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-16 17:59:51.393 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+2026-09-16 17:59:51.462 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-09-16 17:59:52.136 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-16 17:59:52.216 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-09-16 17:59:52.605 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@62108cd3
+2026-09-16 17:59:52.609 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-09-16 17:59:52.676 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-16 17:59:52.726 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.24
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-16 17:59:54.432 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-16 17:59:54.502 [main] DEBUG org.hibernate.SQL - 
+    create table files (
+        id bigint generated by default as identity,
+        deleted boolean not null,
+        filename varchar(255) not null,
+        size bigint not null,
+        user_id bigint not null,
+        primary key (id)
+    )
+2026-09-16 17:59:54.516 [main] DEBUG org.hibernate.SQL - 
+    create table users (
+        id bigint generated by default as identity,
+        auth_token varchar(255),
+        login varchar(50) not null,
+        password varchar(255) not null,
+        primary key (id)
+    )
+2026-09-16 17:59:54.530 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists users 
+       drop constraint if exists UKow0gan20590jrb00upg3va2fn
+2026-09-16 17:59:54.536 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2026-09-16 17:59:54.537 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - constraint "ukow0gan20590jrb00upg3va2fn" of relation "users" does not exist, skipping
+2026-09-16 17:59:54.539 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists users 
+       add constraint UKow0gan20590jrb00upg3va2fn unique (login)
+2026-09-16 17:59:54.546 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists files 
+       add constraint FKdgr5hx49828s5vhjo1s8q3wdp 
+       foreign key (user_id) 
+       references users
+2026-09-16 17:59:54.553 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-16 17:59:55.283 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-16 17:59:55.323 [main] INFO  r.n.cloudService.service.FileService - Директория для файлов: /app/files
+2026-09-16 17:59:55.439 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-16 17:59:56.202 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/cloud'
+2026-09-16 17:59:56.221 [main] INFO  r.n.c.CloudServiceApplication - Started CloudServiceApplication in 9.357 seconds (process running for 10.384)
+2026-09-16 18:03:22.392 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/cloud] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-16 18:03:22.401 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-09-16 18:03:22.434 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 31 ms
+2026-09-16 18:03:23.075 [http-nio-8080-exec-2] INFO  r.n.cloudService.service.AuthService - Попытка входа пользователя: user1
+2026-09-16 18:03:23.436 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.login=?
+2026-09-16 18:03:23.644 [http-nio-8080-exec-2] INFO  r.n.cloudService.service.AuthService - Успешный вход пользователя: user1
+2026-09-16 18:03:23.692 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    update
+        users 
+    set
+        auth_token=?,
+        login=?,
+        password=? 
+    where
+        id=?
+2026-09-16 18:03:23.811 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:03:23.876 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id,
+        fi1_0.deleted,
+        fi1_0.filename,
+        fi1_0.size,
+        fi1_0.user_id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+    fetch
+        first ? rows only
+2026-09-16 18:03:33.688 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:03:33.697 [http-nio-8080-exec-6] INFO  r.n.cloudService.service.FileService - Попытка загрузки файла: testFromUser1.txt для пользователя: user1
+2026-09-16 18:03:33.704 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+        and fi1_0.filename=? 
+    fetch
+        first ? rows only
+2026-09-16 18:03:33.721 [http-nio-8080-exec-6] INFO  r.n.cloudService.service.FileService - Файл успешно сохранён на диск: /app/files/1/testFromUser1.txt
+2026-09-16 18:03:33.739 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        files
+        (deleted, filename, size, user_id) 
+    values
+        (?, ?, ?, ?)
+2026-09-16 18:03:33.770 [http-nio-8080-exec-6] INFO  r.n.cloudService.service.FileService - Метаданные файла сохранены в БД
+2026-09-16 18:03:35.848 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:03:35.858 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id,
+        fi1_0.deleted,
+        fi1_0.filename,
+        fi1_0.size,
+        fi1_0.user_id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+    fetch
+        first ? rows only
+2026-09-16 18:03:39.292 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:03:39.311 [http-nio-8080-exec-9] INFO  r.n.cloudService.service.FileService - Попытка переименования файла: testFromUser1.txt -> 470.txt для пользователя: user1
+2026-09-16 18:03:39.317 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id,
+        fi1_0.deleted,
+        fi1_0.filename,
+        fi1_0.size,
+        fi1_0.user_id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+        and fi1_0.filename=?
+2026-09-16 18:03:39.333 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+        and fi1_0.filename=? 
+    fetch
+        first ? rows only
+2026-09-16 18:03:39.349 [http-nio-8080-exec-9] INFO  r.n.cloudService.service.FileService - Файл успешно переименован на диске
+2026-09-16 18:03:39.351 [http-nio-8080-exec-9] INFO  r.n.cloudService.service.FileService - Имя файла обновлено в БД
+2026-09-16 18:03:39.353 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    update
+        files 
+    set
+        deleted=?,
+        filename=?,
+        size=?,
+        user_id=? 
+    where
+        id=?
+2026-09-16 18:03:41.969 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:03:41.981 [http-nio-8080-exec-1] INFO  r.n.cloudService.service.FileService - Попытка скачивания файла: 470.txt для пользователя: user1
+2026-09-16 18:03:41.988 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id,
+        fi1_0.deleted,
+        fi1_0.filename,
+        fi1_0.size,
+        fi1_0.user_id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+        and fi1_0.filename=?
+2026-09-16 18:03:42.008 [http-nio-8080-exec-1] INFO  r.n.cloudService.service.FileService - Файл готов к скачиванию: 470.txt
+2026-09-16 18:03:56.022 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:03:56.027 [http-nio-8080-exec-3] INFO  r.n.cloudService.service.FileService - Попытка загрузки файла: test2.txt для пользователя: user1
+2026-09-16 18:03:56.031 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+        and fi1_0.filename=? 
+    fetch
+        first ? rows only
+2026-09-16 18:03:56.042 [http-nio-8080-exec-3] INFO  r.n.cloudService.service.FileService - Файл успешно сохранён на диск: /app/files/1/test2.txt
+2026-09-16 18:03:56.045 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        files
+        (deleted, filename, size, user_id) 
+    values
+        (?, ?, ?, ?)
+2026-09-16 18:03:56.048 [http-nio-8080-exec-3] INFO  r.n.cloudService.service.FileService - Метаданные файла сохранены в БД
+2026-09-16 18:03:58.190 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:03:58.215 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id,
+        fi1_0.deleted,
+        fi1_0.filename,
+        fi1_0.size,
+        fi1_0.user_id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+    fetch
+        first ? rows only
+2026-09-16 18:04:07.332 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:04:07.342 [http-nio-8080-exec-5] INFO  r.n.cloudService.service.FileService - Попытка скачивания файла: test2.txt для пользователя: user1
+2026-09-16 18:04:07.348 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id,
+        fi1_0.deleted,
+        fi1_0.filename,
+        fi1_0.size,
+        fi1_0.user_id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+        and fi1_0.filename=?
+2026-09-16 18:04:07.368 [http-nio-8080-exec-5] INFO  r.n.cloudService.service.FileService - Файл готов к скачиванию: test2.txt
+2026-09-16 18:04:14.699 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:04:14.708 [http-nio-8080-exec-6] INFO  r.n.cloudService.service.FileService - Попытка удаления файла: 470.txt для пользователя: user1
+2026-09-16 18:04:14.717 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id,
+        fi1_0.deleted,
+        fi1_0.filename,
+        fi1_0.size,
+        fi1_0.user_id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+        and fi1_0.filename=?
+2026-09-16 18:04:14.734 [http-nio-8080-exec-6] INFO  r.n.cloudService.service.FileService - Файл 470.txt помечен как удаленный (soft delete)
+2026-09-16 18:04:14.739 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    UPDATE
+        files 
+    SET
+        deleted = true 
+    WHERE
+        id = ?
+2026-09-16 18:04:16.861 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:04:16.875 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id,
+        fi1_0.deleted,
+        fi1_0.filename,
+        fi1_0.size,
+        fi1_0.user_id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+    fetch
+        first ? rows only
+2026-09-16 18:04:25.699 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:04:25.706 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:04:25.719 [http-nio-8080-exec-9] WARN  r.n.c.e.GlobalExceptionHandler - Ошибка авторизации: Invalid token
+2026-09-16 18:04:34.083 [http-nio-8080-exec-10] INFO  r.n.cloudService.service.AuthService - Попытка входа пользователя: user2
+2026-09-16 18:04:34.086 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.login=?
+2026-09-16 18:04:34.171 [http-nio-8080-exec-10] INFO  r.n.cloudService.service.AuthService - Успешный вход пользователя: user2
+2026-09-16 18:04:34.173 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    update
+        users 
+    set
+        auth_token=?,
+        login=?,
+        password=? 
+    where
+        id=?
+2026-09-16 18:04:34.195 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:04:34.207 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        fi1_0.id,
+        fi1_0.deleted,
+        fi1_0.filename,
+        fi1_0.size,
+        fi1_0.user_id 
+    from
+        files fi1_0 
+    where
+        (
+            fi1_0.deleted = false
+        ) 
+        and fi1_0.user_id=? 
+    fetch
+        first ? rows only
+2026-09-16 18:04:47.177 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:04:47.186 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.auth_token,
+        u1_0.login,
+        u1_0.password 
+    from
+        users u1_0 
+    where
+        u1_0.auth_token=?
+2026-09-16 18:04:47.195 [http-nio-8080-exec-2] WARN  r.n.c.e.GlobalExceptionHandler - Ошибка авторизации: Invalid token
